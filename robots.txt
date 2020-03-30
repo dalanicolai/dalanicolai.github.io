@@ -1,0 +1,4 @@
+Sitemap: https://dalanicolai.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: dalanicolai.github.io

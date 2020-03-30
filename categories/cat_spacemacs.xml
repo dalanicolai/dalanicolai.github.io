@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dala's playground (Posts about spacemacs)</title><link>https://dalanicolai.github.io/</link><description></description><atom:link href="https://dalanicolai.github.io/categories/cat_spacemacs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:dalanicolai@gmail.com"&gt;Daniel Nicolai&lt;/a&gt; </copyright><lastBuildDate>Mon, 30 Mar 2020 15:34:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spacemacs Robot framework layer</title><link>https://dalanicolai.github.io/posts/spacemacs-robot-framework-layer/index.org</link><dc:creator>Daniel Nicolai</dc:creator><description>&lt;p&gt;
+This week support for the &lt;a href="https://github.com/tomi/vscode-rf-language-server"&gt;Robot Framework Intellisense&lt;/a&gt; language server was added
+to Emacs's lsp-mode.
+&lt;/p&gt;
+
+&lt;p&gt;
+For easy installation a spacemacs layer that also uses the
+&lt;a href="https://github.com/dougm/robot-mode"&gt;robot-mode package&lt;/a&gt; by Doug MacEachern can be found &lt;a href="https://github.com/dalanicolai/robot-framework-layer"&gt;here&lt;/a&gt;.
+&lt;/p&gt;</description><category>spacemacs</category><guid>https://dalanicolai.github.io/posts/spacemacs-robot-framework-layer/index.org</guid><pubDate>Mon, 30 Mar 2020 15:33:18 GMT</pubDate></item></channel></rss>
