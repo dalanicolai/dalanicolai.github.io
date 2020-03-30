@@ -1,0 +1,18 @@
+#+BEGIN_COMMENT
+.. title: Spacemacs Robot framework layer
+.. slug: spacemacs-robot-framework-layer
+.. date: 2020-03-30 17:33:18 UTC+02:00
+.. tags: spacemacs
+.. category: spacemacs
+.. link: 
+.. description: 
+.. type: text
+
+#+END_COMMENT
+
+
+This week support for the [[https://github.com/tomi/vscode-rf-language-server][Robot Framework Intellisense]] language server was added
+to Emacs's lsp-mode.
+
+For easy installation a spacemacs layer that also uses the
+[[https://github.com/dougm/robot-mode][robot-mode package]] by Doug MacEachern can be found [[https://github.com/dalanicolai/robot-framework-layer][here]].
