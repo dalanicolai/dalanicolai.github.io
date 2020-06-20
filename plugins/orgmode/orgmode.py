@@ -116,7 +116,3 @@ The command is {2}'''.format(source, e.returncode, ' '.join(shlex.quote(arg) for
                 fd.write(content)
             else:
                 fd.write('Write your post here.')
-
-    def extension(self):
-        """Return extension used for ORG files."""
-        return ".org"
