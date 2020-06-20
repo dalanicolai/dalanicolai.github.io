@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/archive.html</loc>
-  <lastmod>2020-03-30T15:34:00Z</lastmod>
+  <lastmod>2020-06-20T10:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/categories/</loc>
@@ -47,7 +47,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/archive.html</loc>
-  <lastmod>2020-03-30T15:34:00Z</lastmod>
+  <lastmod>2020-06-20T10:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/categories/</loc>
@@ -64,5 +64,14 @@
  <url>
   <loc>https://dalanicolai.github.io/nl/galleries/</loc>
   <lastmod>2020-03-30T13:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://dalanicolai.github.io/nl/posts/spacemacs-robot-framework-layer/</loc>
+  <lastmod>2020-06-20T10:55:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://dalanicolai.github.io/posts/spacemacs-robot-framework-layer/" />
+ </url>
+ <url>
+  <loc>https://dalanicolai.github.io/posts/spacemacs-robot-framework-layer/</loc>
+  <lastmod>2020-06-20T10:55:00Z</lastmod>
  </url>
 </urlset>
