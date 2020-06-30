@@ -11,6 +11,7 @@
 
 #+END_COMMENT
 
+MORE BEAUTIFUL VERSION
 
 A short inquiry into NA approximations and their validity.
 

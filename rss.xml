@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dala's playground</title><link>https://dalanicolai.github.io/</link><description>Giving is living</description><atom:link href="https://dalanicolai.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:dalanicolai@gmail.com"&gt;Daniel Nicolai&lt;/a&gt; </copyright><lastBuildDate>Tue, 30 Jun 2020 20:38:51 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>testpost</title><link>https://dalanicolai.github.io/posts/testpost/</link><dc:creator>author</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dala's playground</title><link>https://dalanicolai.github.io/</link><description>Giving is living</description><atom:link href="https://dalanicolai.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:dalanicolai@gmail.com"&gt;Daniel Nicolai&lt;/a&gt; </copyright><lastBuildDate>Tue, 30 Jun 2020 21:02:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>testpost</title><link>https://dalanicolai.github.io/posts/testpost/</link><dc:creator>author</dc:creator><description>&lt;p&gt;
 So this works?Write your post here.
 &lt;/p&gt;
 
@@ -15,6 +15,10 @@ okay
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"hello"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</description><category>hello</category><guid>https://dalanicolai.github.io/posts/testpost/</guid><pubDate>Tue, 30 Jun 2020 12:35:21 GMT</pubDate></item><item><title>Numerical Aperture (NA) approximations</title><link>https://dalanicolai.github.io/posts/numerical-aperture-na-approximations/</link><dc:creator>Daniel Nicolai</dc:creator><description>&lt;p&gt;
+MORE BEAUTIFUL VERSION
+&lt;/p&gt;
+
+&lt;p&gt;
 A short inquiry into NA approximations and their validity.
 &lt;/p&gt;
 
@@ -39,11 +43,11 @@ respectively the diameter and the focal length of the lens.
 &lt;/p&gt;
 
 &lt;p&gt;
-Table &lt;a href="https://dalanicolai.github.io/posts/numerical-aperture-na-approximations/#org6f6d22a"&gt;1&lt;/a&gt; shows the angles below which the relative error for the paraxial
+Table &lt;a href="https://dalanicolai.github.io/posts/numerical-aperture-na-approximations/#orga41623d"&gt;1&lt;/a&gt; shows the angles below which the relative error for the paraxial
 approximation is less then 10%.
 &lt;/p&gt;
 
-&lt;table id="org6f6d22a" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+&lt;table id="orga41623d" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
 &lt;caption class="t-above"&gt;&lt;span class="table-number"&gt;Table 1:&lt;/span&gt; θ where error &amp;lt; 10%&lt;/caption&gt;
 
 &lt;colgroup&gt;
