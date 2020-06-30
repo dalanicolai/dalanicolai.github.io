@@ -1,0 +1,40 @@
+#+BEGIN_COMMENT
+.. title: Numerical Aperture (NA) approximations
+.. slug: numerical-aperture-na-approximations
+.. date: 2020-06-29 16:50:20 UTC+02:00
+.. tags: optics
+.. has_math: true
+.. category: optics
+.. link: 
+.. description: 
+.. type: text
+
+#+END_COMMENT
+
+
+A short inquiry into NA approximations and their validity.
+
+The definition for NA is given by the formula \[\mathrm{NA} = \sin{\theta}\] where
+\(\theta\) is half the opening angle of the light cone accepted by the imaging
+system.
+
+For small angles the paraxial approximation \(\sin{\theta} = \theta\) can be used, for
+calculating \(\theta\) and for calculating \(\sin{\theta}\).
+
+For a thin lens \(\theta = \tan{\frac{D}{2f}}\), where \(D\) and \(f\) are
+respectively the diameter and the focal length of the lens.
+
+[[img-url:../images/na_approx_error.png]]
+
+Table [[table]] shows the angles below which the relative error for the paraxial
+approximation is less then 10%.
+
+#+CAPTION: \theta where error < 10%
+#+NAME: table
+|                          |   rad |   deg |
+|--------------------------+-------+-------|
+| arctan(\theta) vs \theta | 0.569 | 32.60 |
+| sin(\theta) vs \theta    | 0.748 | 42.86 |
+| NA(\theta) vs \theta     | 0.458 | 26.24 |
+#+TBLFM: $3=($2*180)/3.14159
+

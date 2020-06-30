@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dala's playground (Berichten over hello)</title><link>https://dalanicolai.github.io/</link><description></description><atom:link href="https://dalanicolai.github.io/nl/categories/hello.xml" rel="self" type="application/rss+xml"></atom:link><language>nl</language><copyright>Contents © 2020 &lt;a href="mailto:dalanicolai@gmail.com"&gt;Daniel Nicolai&lt;/a&gt; </copyright><lastBuildDate>Tue, 30 Jun 2020 13:50:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>testpost</title><link>https://dalanicolai.github.io/nl/posts/testpost/</link><dc:creator>author</dc:creator><description>&lt;p&gt;
+So this works?Write your post here.
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;hello&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="s"&gt;"This is a test"&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;print&lt;/span&gt; &lt;span class="s"&gt;"hello"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+okay
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"hello"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><guid>https://dalanicolai.github.io/nl/posts/testpost/</guid><pubDate>Tue, 30 Jun 2020 12:35:21 GMT</pubDate></item></channel></rss>

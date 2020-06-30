@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dala's playground (Berichten van Daniel Nicolai)</title><link>https://dalanicolai.github.io/</link><description></description><atom:link href="https://dalanicolai.github.io/nl/authors/daniel-nicolai.xml" rel="self" type="application/rss+xml"></atom:link><language>nl</language><copyright>Contents © 2020 &lt;a href="mailto:dalanicolai@gmail.com"&gt;Daniel Nicolai&lt;/a&gt; </copyright><lastBuildDate>Tue, 30 Jun 2020 20:38:51 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Numerical Aperture (NA) approximations</title><link>https://dalanicolai.github.io/nl/posts/numerical-aperture-na-approximations/</link><dc:creator>Daniel Nicolai</dc:creator><description>&lt;p&gt;
+A short inquiry into NA approximations and their validity.
+&lt;/p&gt;
+
+&lt;p&gt;
+The definition for NA is given by the formula \[\mathrm{NA} = \sin{\theta}\] where
+\(\theta\) is half the opening angle of the light cone accepted by the imaging
+system.
+&lt;/p&gt;
+
+&lt;p&gt;
+For small angles the paraxial approximation \(\sin{\theta} = \theta\) can be used, for
+calculating \(\theta\) and for calculating \(\sin{\theta}\).
+&lt;/p&gt;
+
+&lt;p&gt;
+For a thin lens \(\theta = \tan{\frac{D}{2f}}\), where \(D\) and \(f\) are
+respectively the diameter and the focal length of the lens.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;img src="https://dalanicolai.github.io/nl/posts/images/na_approx_error.png" alt="nil"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Table &lt;a href="https://dalanicolai.github.io/nl/posts/numerical-aperture-na-approximations/#org6f6d22a"&gt;1&lt;/a&gt; shows the angles below which the relative error for the paraxial
+approximation is less then 10%.
+&lt;/p&gt;
+
+&lt;table id="org6f6d22a" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+&lt;caption class="t-above"&gt;&lt;span class="table-number"&gt;Table 1:&lt;/span&gt; θ where error &amp;lt; 10%&lt;/caption&gt;
+
+&lt;colgroup&gt;
+&lt;col class="org-left"&gt;
+
+&lt;col class="org-right"&gt;
+
+&lt;col class="org-right"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="org-right"&gt;rad&lt;/th&gt;
+&lt;th scope="col" class="org-right"&gt;deg&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="org-left"&gt;arctan(θ) vs θ&lt;/td&gt;
+&lt;td class="org-right"&gt;0.569&lt;/td&gt;
+&lt;td class="org-right"&gt;32.60&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;sin(θ) vs θ&lt;/td&gt;
+&lt;td class="org-right"&gt;0.748&lt;/td&gt;
+&lt;td class="org-right"&gt;42.86&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;NA(θ) vs θ&lt;/td&gt;
+&lt;td class="org-right"&gt;0.458&lt;/td&gt;
+&lt;td class="org-right"&gt;26.24&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description><guid>https://dalanicolai.github.io/nl/posts/numerical-aperture-na-approximations/</guid><pubDate>Mon, 29 Jun 2020 14:50:20 GMT</pubDate></item><item><title>Spacemacs Robot framework layer</title><link>https://dalanicolai.github.io/nl/posts/spacemacs-robot-framework-layer/</link><dc:creator>Daniel Nicolai</dc:creator><description>&lt;p&gt;
+This week support for the &lt;a href="https://github.com/tomi/vscode-rf-language-server"&gt;Robot Framework Intellisense&lt;/a&gt; language server was added
+to Emacs's lsp-mode.
+&lt;/p&gt;
+
+&lt;p&gt;
+For easy installation a spacemacs layer that also uses the
+&lt;a href="https://github.com/dougm/robot-mode"&gt;robot-mode package&lt;/a&gt; by Doug MacEachern can be found &lt;a href="https://github.com/dalanicolai/robot-framework-layer"&gt;here&lt;/a&gt;.
+&lt;/p&gt;</description><guid>https://dalanicolai.github.io/nl/posts/spacemacs-robot-framework-layer/</guid><pubDate>Mon, 30 Mar 2020 15:33:18 GMT</pubDate></item></channel></rss>
