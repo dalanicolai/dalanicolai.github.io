@@ -38,12 +38,12 @@ approximation is less then 10%.
 | arctan(\theta) vs \theta          | 0.569 | 32.60 |
 | sin(\theta) vs \theta             | 0.748 | 42.86 |
 | NA(\theta) vs \theta              | 0.458 | 26.24 |
-| NA(arctan(\theta)) vs tan(\theta) | 0.341 | 19.54 |
+| NA(\theta) vs tan(\theta) | 0.341 | 19.54 |
 #+TBLFM: $3=($2*180)/3.14159
 
 #+CAPTION: \theta where error < 5%
 #+NAME: table2
 |                                   |   rad |   deg | tan \theta |
 |-----------------------------------+-------+-------+------------|
-| NA(arctan(\theta)) vs tan(\theta) | 0.243 | 13.92 |       0.24 |
+| NA(\theta) vs tan(\theta)        | 0.243 | 13.92 |       0.24 |
 #+TBLFM: $3=($2*180)/3.1415
