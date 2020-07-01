@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dala's playground</title><link>https://dalanicolai.github.io/</link><description>Giving is living</description><atom:link href="https://dalanicolai.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:dalanicolai@gmail.com"&gt;Daniel Nicolai&lt;/a&gt; </copyright><lastBuildDate>Wed, 01 Jul 2020 10:41:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Numerical Aperture (NA) approximations</title><link>https://dalanicolai.github.io/posts/numerical-aperture-na-approximations/</link><dc:creator>Daniel Nicolai</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dala's playground</title><link>https://dalanicolai.github.io/</link><description>Giving is living</description><atom:link href="https://dalanicolai.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:dalanicolai@gmail.com"&gt;Daniel Nicolai&lt;/a&gt; </copyright><lastBuildDate>Wed, 01 Jul 2020 10:52:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Numerical Aperture (NA) approximations</title><link>https://dalanicolai.github.io/posts/numerical-aperture-na-approximations/</link><dc:creator>Daniel Nicolai</dc:creator><description>&lt;p&gt;
 A short inquiry into NA approximations and their validity.
 &lt;/p&gt;
 
@@ -27,11 +27,11 @@ respectively the diameter and the focal length of the lens. To obtain from
 &lt;/p&gt;
 
 &lt;p&gt;
-Table &lt;a href="https://dalanicolai.github.io/posts/numerical-aperture-na-approximations/#orgefaa2dd"&gt;1&lt;/a&gt; shows the angles below which the relative error for the paraxial
+Table &lt;a href="https://dalanicolai.github.io/posts/numerical-aperture-na-approximations/#orgb3c256e"&gt;1&lt;/a&gt; shows the angles below which the relative error for the paraxial
 approximation is less then 10%.
 &lt;/p&gt;
 
-&lt;table id="orgefaa2dd" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+&lt;table id="orgb3c256e" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
 &lt;caption class="t-above"&gt;&lt;span class="table-number"&gt;Table 1:&lt;/span&gt; θ where error &amp;lt; 10%&lt;/caption&gt;
 
 &lt;colgroup&gt;
@@ -68,14 +68,14 @@ approximation is less then 10%.
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;NA(θ) vs tan(θ)&lt;/td&gt;
+&lt;td class="org-left"&gt;NA(arctan(θ)) vs tan(θ)&lt;/td&gt;
 &lt;td class="org-right"&gt;0.341&lt;/td&gt;
 &lt;td class="org-right"&gt;19.54&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;table id="orgb426707" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+&lt;table id="org819560e" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
 &lt;caption class="t-above"&gt;&lt;span class="table-number"&gt;Table 2:&lt;/span&gt; θ where error &amp;lt; 5%&lt;/caption&gt;
 
 &lt;colgroup&gt;
@@ -97,7 +97,7 @@ approximation is less then 10%.
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="org-left"&gt;NA(θ) vs tan(θ)&lt;/td&gt;
+&lt;td class="org-left"&gt;NA(arctan(θ)) vs tan(θ)&lt;/td&gt;
 &lt;td class="org-right"&gt;0.243&lt;/td&gt;
 &lt;td class="org-right"&gt;13.92&lt;/td&gt;
 &lt;td class="org-right"&gt;0.24&lt;/td&gt;
