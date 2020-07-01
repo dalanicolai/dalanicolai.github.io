@@ -89,10 +89,6 @@ okay
 </div>
     </header><div class="p-summary entry-summary">
     <p>
-MORE BEAUTIFUL VERSION
-</p>
-
-<p>
 A short inquiry into NA approximations and their validity.
 </p>
 
@@ -103,24 +99,27 @@ system.
 </p>
 
 <p>
-For small angles the paraxial approximation \(\sin{\theta} = \theta\) can be used, for
-calculating \(\theta\) and for calculating \(\sin{\theta}\).
+For small angles the paraxial approximations \[\sin{\theta} \approx \theta,\:
+\cos{\theta} \approx 1\: \text{and}\: \tan{\theta} =
+\frac{\sin{\theta}}{\cos{\theta}} \approx \theta\] can be used, for calculating
+\(\theta\), \(\sin{\theta}\) and \(\tan{\theta}\).
 </p>
 
 <p>
-For a thin lens \(\theta = \tan{\frac{D}{2f}}\), where \(D\) and \(f\) are
-respectively the diameter and the focal length of the lens.
+For a thin lens \(\theta = \arctan{\frac{D}{2f}}\), where \(D\) and \(f\) are
+respectively the diameter and the focal length of the lens. To obtain from
+θ we use \(\frac{D}{2f} = \tan{\theta}\)
 </p>
 
 <p>
 <img src="../posts/images/na_approx_error.png" alt="nil"></p>
 
 <p>
-Table <a href="../posts/numerical-aperture-na-approximations/#orga41623d">1</a> shows the angles below which the relative error for the paraxial
+Table <a href="../posts/numerical-aperture-na-approximations/#orgcf7e6a6">1</a> shows the angles below which the relative error for the paraxial
 approximation is less then 10%.
 </p>
 
-<table id="orga41623d" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="orgcf7e6a6" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above">
 <span class="table-number">Table 1:</span> θ where error &lt; 10%</caption>
 
@@ -150,7 +149,35 @@ approximation is less then 10%.
 <td class="org-right">0.458</td>
 <td class="org-right">26.24</td>
 </tr>
+<tr>
+<td class="org-left">NA(arctan(θ)) vs tan(θ)</td>
+<td class="org-right">0.341</td>
+<td class="org-right">19.54</td>
+</tr>
 </tbody>
+</table>
+<table id="orgfac066a" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above">
+<span class="table-number">Table 2:</span> θ where error &lt; 5%</caption>
+
+<colgroup>
+<col class="org-left">
+<col class="org-right">
+<col class="org-right">
+<col class="org-right">
+</colgroup>
+<thead><tr>
+<th scope="col" class="org-left"> </th>
+<th scope="col" class="org-right">rad</th>
+<th scope="col" class="org-right">deg</th>
+<th scope="col" class="org-right">tan θ</th>
+</tr></thead>
+<tbody><tr>
+<td class="org-left">NA(arctan(θ)) vs tan(θ)</td>
+<td class="org-right">0.243</td>
+<td class="org-right">13.92</td>
+<td class="org-right">0.24</td>
+</tr></tbody>
 </table>
 </div>
     </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../posts/spacemacs-robot-framework-layer/" class="u-url">Spacemacs Robot framework layer</a></h1>
