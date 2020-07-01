@@ -6,28 +6,16 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://dalanicolai.github.io/authors/author.xml</loc>
-  <lastmod>2020-06-30T13:50:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://dalanicolai.github.io/authors/daniel-nicolai.xml</loc>
-  <lastmod>2020-07-01T10:36:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://dalanicolai.github.io/categories/cat_optics.xml</loc>
-  <lastmod>2020-07-01T10:36:00Z</lastmod>
+  <lastmod>2020-07-01T10:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/categories/cat_spacemacs.xml</loc>
   <lastmod>2020-03-30T15:34:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://dalanicolai.github.io/categories/hello.xml</loc>
-  <lastmod>2020-06-30T13:50:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://dalanicolai.github.io/categories/optics.xml</loc>
-  <lastmod>2020-07-01T10:36:00Z</lastmod>
+  <lastmod>2020-07-01T10:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/categories/spacemacs.xml</loc>
@@ -38,28 +26,16 @@
   <lastmod>2020-07-01T10:37:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://dalanicolai.github.io/nl/authors/author.xml</loc>
-  <lastmod>2020-06-30T13:50:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://dalanicolai.github.io/nl/authors/daniel-nicolai.xml</loc>
-  <lastmod>2020-07-01T10:36:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/cat_optics.xml</loc>
-  <lastmod>2020-07-01T10:36:00Z</lastmod>
+  <lastmod>2020-07-01T10:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/cat_spacemacs.xml</loc>
   <lastmod>2020-03-30T15:34:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://dalanicolai.github.io/nl/categories/hello.xml</loc>
-  <lastmod>2020-06-30T13:50:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/optics.xml</loc>
-  <lastmod>2020-07-01T10:36:00Z</lastmod>
+  <lastmod>2020-07-01T10:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/spacemacs.xml</loc>
@@ -71,14 +47,14 @@
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/nl/rss.xml</loc>
-  <lastmod>2020-07-01T10:37:00Z</lastmod>
+  <lastmod>2020-07-01T10:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/rss.xml</loc>
-  <lastmod>2020-07-01T10:37:00Z</lastmod>
+  <lastmod>2020-07-01T10:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/sitemap.xml</loc>
-  <lastmod>2020-07-01T10:37:00Z</lastmod>
+  <lastmod>2020-07-01T10:51:00Z</lastmod>
  </sitemap>
 </sitemapindex>
