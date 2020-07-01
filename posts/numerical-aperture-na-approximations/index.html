@@ -14,12 +14,12 @@
 <meta property="og:site_name" content="Dala's playground">
 <meta property="og:title" content="Numerical Aperture (NA) approximations">
 <meta property="og:url" content="https://dalanicolai.github.io/posts/numerical-aperture-na-approximations/">
-<meta property="og:description" content="A short inquiry into NA approximations and their validity.
+<meta property="og:description" content="A not so short inquiry into NA approximations and their validity.
 
 
 
-The definition for NA is given by the formula \[\mathrm{NA} = \sin{\theta}\] where
-\(\theta\) is half the opening angle of the light cone ">
+The definition for NA is given by the formula \[\mathrm{NA} = \sin{\theta}\]
+where \(\theta\) is half the opening angle of the ligh">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-06-29T16:50:20+02:00">
 <meta property="article:tag" content="optics">
@@ -75,37 +75,37 @@ The definition for NA is given by the formula \[\mathrm{NA} = \sin{\theta}\] whe
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <p>
-A short inquiry into NA approximations and their validity.
+A not so short inquiry into NA approximations and their validity.
 </p>
 
 <p>
-The definition for NA is given by the formula \[\mathrm{NA} = \sin{\theta}\] where
-\(\theta\) is half the opening angle of the light cone accepted by the imaging
-system.
+The definition for NA is given by the formula \[\mathrm{NA} = \sin{\theta}\]
+where \(\theta\) is half the opening angle of the light cone accepted by the
+imaging system.
 </p>
 
 <p>
 For small angles the paraxial approximations \[\sin{\theta} \approx \theta,\:
 \cos{\theta} \approx 1\: \text{and}\: \tan{\theta} =
-\frac{\sin{\theta}}{\cos{\theta}} \approx \theta\] can be used, for calculating
+\frac{\sin{\theta}}{\cos{\theta}} \approx \theta\] can be used for calculating
 \(\theta\), \(\sin{\theta}\) and \(\tan{\theta}\).
 </p>
 
 <p>
 For a thin lens \(\theta = \arctan{\frac{D}{2f}}\), where \(D\) and \(f\) are
-respectively the diameter and the focal length of the lens. To obtain from
-θ we use \(\frac{D}{2f} = \tan{\theta}\)
+respectively the diameter and the focal length of the lens. To obtain
+\(\frac{D}{2f}\) we use \(\frac{D}{2f} = \tan{\theta}\)
 </p>
 
 <p>
 <img src="../images/na_approx_error.png" alt="nil"></p>
 
 <p>
-Table <a href="#orgb3c256e">1</a> shows the angles below which the relative error for the paraxial
-approximation is less then 10%.
+Table <a href="#orgbbbd778">1</a> and <a href="#orgf0aab4f">2</a> show the angles below which the relative error for the
+paraxial approximation are less then 10% and 5% respectively.
 </p>
 
-<table id="orgb3c256e" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="orgbbbd778" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above">
 <span class="table-number">Table 1:</span> θ where error &lt; 10%</caption>
 
@@ -136,13 +136,13 @@ approximation is less then 10%.
 <td class="org-right">26.24</td>
 </tr>
 <tr>
-<td class="org-left">NA(arctan(θ)) vs tan(θ)</td>
+<td class="org-left">NA(θ) vs tan(θ)</td>
 <td class="org-right">0.341</td>
 <td class="org-right">19.54</td>
 </tr>
 </tbody>
 </table>
-<table id="org819560e" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="orgf0aab4f" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above">
 <span class="table-number">Table 2:</span> θ where error &lt; 5%</caption>
 
@@ -159,13 +159,19 @@ approximation is less then 10%.
 <th scope="col" class="org-right">tan θ</th>
 </tr></thead>
 <tbody><tr>
-<td class="org-left">NA(arctan(θ)) vs tan(θ)</td>
+<td class="org-left">NA(θ) vs tan(θ)</td>
 <td class="org-right">0.243</td>
 <td class="org-right">13.92</td>
 <td class="org-right">0.24</td>
 </tr></tbody>
 </table>
-</div>
+<p>
+Table 1 shows that using the approximation \(\mathrm{NA}(\theta) \approx
+\frac{D}{2f}\) gives more than 10% for angles larger than 0.34 rad (tan θ =
+0.35) or 19 degrees, while the errors become larger than 5% already for angles
+of 0.24 rad or 13 degrees.
+</p>
+    </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/optics/" rel="tag">optics</a></li>
         </ul>

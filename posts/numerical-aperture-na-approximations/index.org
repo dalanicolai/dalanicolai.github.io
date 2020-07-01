@@ -11,39 +11,45 @@
 
 #+END_COMMENT
 
-A short inquiry into NA approximations and their validity.
 
-The definition for NA is given by the formula \[\mathrm{NA} = \sin{\theta}\] where
-\(\theta\) is half the opening angle of the light cone accepted by the imaging
-system.
+A not so short inquiry into NA approximations and their validity.
+
+The definition for NA is given by the formula \[\mathrm{NA} = \sin{\theta}\]
+where \(\theta\) is half the opening angle of the light cone accepted by the
+imaging system.
 
 For small angles the paraxial approximations \[\sin{\theta} \approx \theta,\:
 \cos{\theta} \approx 1\: \text{and}\: \tan{\theta} =
-\frac{\sin{\theta}}{\cos{\theta}} \approx \theta\] can be used, for calculating
+\frac{\sin{\theta}}{\cos{\theta}} \approx \theta\] can be used for calculating
 \(\theta\), \(\sin{\theta}\) and \(\tan{\theta}\).
 
 For a thin lens \(\theta = \arctan{\frac{D}{2f}}\), where \(D\) and \(f\) are
-respectively the diameter and the focal length of the lens. To obtain from
-\theta we use \(\frac{D}{2f} = \tan{\theta}\)
+respectively the diameter and the focal length of the lens. To obtain
+\(\frac{D}{2f}\) we use \(\frac{D}{2f} = \tan{\theta}\)
 
 [[img-url:../images/na_approx_error.png]]
 
-Table [[table]] shows the angles below which the relative error for the paraxial
-approximation is less then 10%.
+Table [[table]] and [[table2]] show the angles below which the relative error for the
+paraxial approximation are less then 10% and 5% respectively.
 
 #+CAPTION: \theta where error < 10%
 #+NAME: table
-|                                   |   rad |   deg |
-|-----------------------------------+-------+-------|
-| arctan(\theta) vs \theta          | 0.569 | 32.60 |
-| sin(\theta) vs \theta             | 0.748 | 42.86 |
-| NA(\theta) vs \theta              | 0.458 | 26.24 |
-| NA(arctan(\theta)) vs tan(\theta) | 0.341 | 19.54 |
+|                           |   rad |   deg |
+|---------------------------+-------+-------|
+| arctan(\theta) vs \theta  | 0.569 | 32.60 |
+| sin(\theta) vs \theta     | 0.748 | 42.86 |
+| NA(\theta) vs \theta      | 0.458 | 26.24 |
+| NA(\theta) vs tan(\theta) | 0.341 | 19.54 |
 #+TBLFM: $3=($2*180)/3.14159
 
 #+CAPTION: \theta where error < 5%
 #+NAME: table2
-|                                   |   rad |   deg | tan \theta |
-|-----------------------------------+-------+-------+------------|
-| NA(arctan(\theta)) vs tan(\theta) | 0.243 | 13.92 |       0.24 |
+|                           |   rad |   deg | tan \theta |
+|---------------------------+-------+-------+------------|
+| NA(\theta) vs tan(\theta) | 0.243 | 13.92 |       0.24 |
 #+TBLFM: $3=($2*180)/3.1415
+
+Table 1 shows that using the approximation \(\mathrm{NA}(\theta) \approx
+\frac{D}{2f}\) gives more than 10% for angles larger than 0.34 rad (tan \theta =
+0.35) or 19 degrees, while the errors become larger than 5% already for angles
+of 0.24 rad or 13 degrees.
