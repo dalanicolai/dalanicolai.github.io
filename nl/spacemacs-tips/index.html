@@ -60,31 +60,31 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-orgddfac2f" class="outline-2">
-<h2 id="orgddfac2f">Spacemacs tips</h2>
-<div class="outline-text-2" id="text-orgddfac2f">
+    <div id="outline-container-orgcf17882" class="outline-2">
+<h2 id="orgcf17882">Spacemacs tips</h2>
+<div class="outline-text-2" id="text-orgcf17882">
 </div>
-<div id="outline-container-org9958733" class="outline-3">
-<h3 id="org9958733">Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)</h3>
-<div class="outline-text-3" id="text-org9958733">
+<div id="outline-container-org2e6b001" class="outline-3">
+<h3 id="org2e6b001">Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)</h3>
+<div class="outline-text-3" id="text-org2e6b001">
 <p>
 Follow (ALL) the steps at <a href="https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html">the great practicalli website</a> to switch to develop branch.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc045078" class="outline-3">
-<h3 id="orgc045078">Use <b>o</b> instead of <b>w</b>
+<div id="outline-container-org92553ae" class="outline-3">
+<h3 id="org92553ae">Use <b>o</b> instead of <b>w</b>
 </h3>
-<div class="outline-text-3" id="text-orgc045078">
+<div class="outline-text-3" id="text-org92553ae">
 <p>
 In spacemacs a word(-object) is defined differently than in vim. To quickly edit
 full symbol name use <code>o</code> instead of <code>w</code> (e.g. for selecting a symbol use <code>vio</code>).
 </p>
 </div>
 </div>
-<div id="outline-container-orga435714" class="outline-3">
-<h3 id="orga435714">quick navigation within files</h3>
-<div class="outline-text-3" id="text-orga435714">
+<div id="outline-container-org1c9ab3e" class="outline-3">
+<h3 id="org1c9ab3e">Quick navigation within files</h3>
+<div class="outline-text-3" id="text-org1c9ab3e">
 <p>
  To quickly navigate inside a file use <code>SPC j i</code>. Additionally one could choose to
 <a href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Specifying-File-Variables">set a local variable</a> to start with the code folded using <code>HideShow</code>. E.g. replace
@@ -94,18 +94,18 @@ the first line of your <code>.spacemacs</code> file by the following:
 </pre></div>
 </div>
 </div>
-<div id="outline-container-org8fd0325" class="outline-3">
-<h3 id="org8fd0325">Comments</h3>
-<div class="outline-text-3" id="text-org8fd0325">
+<div id="outline-container-orge11fcc4" class="outline-3">
+<h3 id="orge11fcc4">Comments</h3>
+<div class="outline-text-3" id="text-orge11fcc4">
 <p>
 Lines can be (un)commented by selecting line with evil visual line <code>SPC V</code>
 followed by <code>SPC ;</code>. Use <code>SPC ; ;</code> to directly toggle single line comments.
 </p>
 </div>
 </div>
-<div id="outline-container-orgfc7c6d2" class="outline-3">
-<h3 id="orgfc7c6d2">Finding/discovering functionality</h3>
-<div class="outline-text-3" id="text-orgfc7c6d2">
+<div id="outline-container-org01d31f5" class="outline-3">
+<h3 id="org01d31f5">Finding/discovering functionality</h3>
+<div class="outline-text-3" id="text-org01d31f5">
 <p>
 When looking for some kind of functionality or it's keybinding, it is often
 handy to use <a href="https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#discovering">the self-documenting features</a> of Spacemacs.
@@ -124,9 +124,9 @@ d</code>). Note them well, <b>THEY ARE PROBABLY THE MOST IMPORTANT FUNCTIONS ONE
 </p>
 </div>
 </div>
-<div id="outline-container-orgb62a37b" class="outline-3">
-<h3 id="orgb62a37b">Private packages/layers</h3>
-<div class="outline-text-3" id="text-orgb62a37b">
+<div id="outline-container-org0e58272" class="outline-3">
+<h3 id="org0e58272">Private packages/layers</h3>
+<div class="outline-text-3" id="text-org0e58272">
 <p>
 Instead of creating private layers directly in your <code>.emacs.d/private/</code>
 directory, consider to place them in a dedicated syncing directory (e.g. a
@@ -135,9 +135,9 @@ your .emacs.d/private/ directory. Even better create a github repository per lay
 </p>
 </div>
 </div>
-<div id="outline-container-orgb96ad49" class="outline-3">
-<h3 id="orgb96ad49">org notes</h3>
-<div class="outline-text-3" id="text-orgb96ad49">
+<div id="outline-container-org73290d1" class="outline-3">
+<h3 id="org73290d1">Org notes</h3>
+<div class="outline-text-3" id="text-org73290d1">
 <p>
 Create an org folder in some syncing directory (e.g. Dropbox or Syncthing).
 Subsequently in that org folder create a .projectile file. Now you can use all
@@ -146,9 +146,9 @@ search withing all your notes files.
 </p>
 </div>
 </div>
-<div id="outline-container-orgad09963" class="outline-3">
-<h3 id="orgad09963">deep-search</h3>
-<div class="outline-text-3" id="text-orgad09963">
+<div id="outline-container-org88f11ba" class="outline-3">
+<h3 id="org88f11ba">Deep-search</h3>
+<div class="outline-text-3" id="text-org88f11ba">
 <p>
 Remember that ripgrep, ag etc. ignore files in .gitignore. Therefore you can not
 simply use them to search e.g. inside of elpa packages in your .emacs.d
@@ -156,36 +156,36 @@ directory. Instead either use <code>SPC s f</code> or use grep <code>SPC s g</co
 </p>
 </div>
 </div>
-<div id="outline-container-org7142e85" class="outline-3">
-<h3 id="org7142e85">customizations</h3>
-<div class="outline-text-3" id="text-org7142e85">
+<div id="outline-container-org703d933" class="outline-3">
+<h3 id="org703d933">Customizations</h3>
+<div class="outline-text-3" id="text-org703d933">
 <ul class="org-ul">
 <li>set <code>dotspacemacs-distinguish-gui-tab</code> to <code>t</code> in your .spacemacs file so you can
 jump forward with <code>C-i</code> after jumping backward with <code>C-o</code>.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5632156" class="outline-3">
-<h3 id="org5632156">Place <b>(transient-bind-q-to-quit)</b> at the end of user-config</h3>
-<div class="outline-text-3" id="text-org5632156">
+<div id="outline-container-org2f3533b" class="outline-3">
+<h3 id="org2f3533b">Place <b>(transient-bind-q-to-quit)</b> at the end of user-config</h3>
+<div class="outline-text-3" id="text-org2f3533b">
 <p>
 I think this should be the default configuration in Spacemacs, because it is
 more vim-ish (you can find a discussion <a href="https://github.com/syl20bnr/spacemacs/issues/6992#issuecomment-684439951">here</a>).
 </p>
 </div>
 </div>
-<div id="outline-container-org4ada093" class="outline-3">
-<h3 id="org4ada093">Annotate PDF's</h3>
-<div class="outline-text-3" id="text-org4ada093">
+<div id="outline-container-org911254e" class="outline-3">
+<h3 id="org911254e">Annotate PDF's</h3>
+<div class="outline-text-3" id="text-org911254e">
 <p>
 To make annotating pdf's more comfortable, set <code>pdf-annot-activate-annotation</code> to
 <code>t</code> and add <code>text-mode</code> to <code>evil-insert-state-modes</code>
 </p>
 </div>
 </div>
-<div id="outline-container-org2172a34" class="outline-3">
-<h3 id="org2172a34">Customize buffer newline</h3>
-<div class="outline-text-3" id="text-org2172a34">
+<div id="outline-container-org85203ad" class="outline-3">
+<h3 id="org85203ad">Customize buffer newline</h3>
+<div class="outline-text-3" id="text-org85203ad">
 <p>
 In customize buffer, for capture template, to create a newline (instead of \n
 charachter in config file), use C-j or C-o <a href="https://lists.gnu.org/archive/html/emacs-orgmode/2010-11/msg01006.html">reference link</a>
@@ -194,9 +194,9 @@ charachter in config file), use C-j or C-o <a href="https://lists.gnu.org/archiv
 </div>
 </div>
 
-<div id="outline-container-orgc76c3de" class="outline-2">
-<h2 id="orgc76c3de">Table of handy key-sequences</h2>
-<div class="outline-text-2" id="text-orgc76c3de">
+<div id="outline-container-org98f8572" class="outline-2">
+<h2 id="org98f8572">Table of handy key-sequences</h2>
+<div class="outline-text-2" id="text-org98f8572">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup>
 <col class="org-left">
