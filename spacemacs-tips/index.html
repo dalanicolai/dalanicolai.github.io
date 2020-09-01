@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="description" content="Spacemacs tips">
 <meta name="viewport" content="width=device-width">
-<title>Spacemacs tips | Dala's playground</title>
+<title>Spacemacs | Dala's playground</title>
 <link href="../assets/css/all.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
@@ -12,7 +12,7 @@
 <link rel="canonical" href="https://dalanicolai.github.io/spacemacs-tips/">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="Daniel Nicolai">
 <meta property="og:site_name" content="Dala's playground">
-<meta property="og:title" content="Spacemacs tips">
+<meta property="og:title" content="Spacemacs">
 <meta property="og:url" content="https://dalanicolai.github.io/spacemacs-tips/">
 <meta property="og:description" content="Spacemacs tips">
 <meta property="og:type" content="article">
@@ -55,7 +55,7 @@
 
       <div class="container content" id="content">
         
-<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">Spacemacs tips</a></h1>
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">Spacemacs</a></h1>
 
         
 
@@ -67,32 +67,50 @@ communicate with Intel hardware.”
 – Erwin, <i>#emacs</i>, Freenode.
 </p>
 </blockquote>
+<div id="outline-container-orgf00d101" class="outline-2">
+<h2 id="orgf00d101">Introduction and motivation</h2>
+<div class="outline-text-2" id="text-orgf00d101">
+<p>
+As I prefer to work on other things then studying documentation for how to use
+certain tools, I will keep this introduction very short.
+</p>
 
-<div id="outline-container-org7b60b4d" class="outline-2">
-<h2 id="org7b60b4d">Spacemacs tips</h2>
-<div class="outline-text-2" id="text-org7b60b4d">
+<p>
+In short Emacs is a universal text editing environment that is implemented as
+and powered by a virtual lisp-machine. Spacemacs is a community based set of
+configurations which focuses on vim-style editing with the notable - and in my
+opinion genius - improvement of using the space bar as a leader key for
+navigation and controlling the lisp-machine. A crucial difference between Emacs
+and any other text editor is its focus on extensibility and self-documentation
+which makes it the ultimate editor for hackers and community driven development.
+</p>
 </div>
-<div id="outline-container-org1fe21a4" class="outline-3">
-<h3 id="org1fe21a4">Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)</h3>
-<div class="outline-text-3" id="text-org1fe21a4">
+</div>
+<div id="outline-container-org9b3dd0f" class="outline-2">
+<h2 id="org9b3dd0f">Spacemacs tips</h2>
+<div class="outline-text-2" id="text-org9b3dd0f">
+</div>
+<div id="outline-container-org86ee1bc" class="outline-3">
+<h3 id="org86ee1bc">Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)</h3>
+<div class="outline-text-3" id="text-org86ee1bc">
 <p>
 Follow (ALL) the steps at <a href="https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html">the great practicalli website</a> to switch to develop branch.
 </p>
 </div>
 </div>
-<div id="outline-container-org84f8ffb" class="outline-3">
-<h3 id="org84f8ffb">Use <b>o</b> instead of <b>w</b>
+<div id="outline-container-orgaabee61" class="outline-3">
+<h3 id="orgaabee61">Use <b>o</b> instead of <b>w</b>
 </h3>
-<div class="outline-text-3" id="text-org84f8ffb">
+<div class="outline-text-3" id="text-orgaabee61">
 <p>
 In spacemacs a word(-object) is defined differently than in vim. To quickly edit
 full symbol name use <code>o</code> instead of <code>w</code> (e.g. for selecting a symbol use <code>vio</code>).
 </p>
 </div>
 </div>
-<div id="outline-container-orgdadf753" class="outline-3">
-<h3 id="orgdadf753">Quick navigation within files</h3>
-<div class="outline-text-3" id="text-orgdadf753">
+<div id="outline-container-org8485311" class="outline-3">
+<h3 id="org8485311">Quick navigation within files</h3>
+<div class="outline-text-3" id="text-org8485311">
 <p>
  To quickly navigate inside a file use <code>SPC j i</code>. Additionally one could choose to
 <a href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Specifying-File-Variables">set a local variable</a> to start with the code folded using <code>HideShow</code>. E.g. replace
@@ -102,18 +120,18 @@ the first line of your <code>.spacemacs</code> file by the following:
 </pre></div>
 </div>
 </div>
-<div id="outline-container-org500e498" class="outline-3">
-<h3 id="org500e498">Comments</h3>
-<div class="outline-text-3" id="text-org500e498">
+<div id="outline-container-org42e9ff5" class="outline-3">
+<h3 id="org42e9ff5">Comments</h3>
+<div class="outline-text-3" id="text-org42e9ff5">
 <p>
 Lines can be (un)commented by selecting line with evil visual line <code>SPC V</code>
 followed by <code>SPC ;</code>. Use <code>SPC ; ;</code> to directly toggle single line comments.
 </p>
 </div>
 </div>
-<div id="outline-container-org10a9aea" class="outline-3">
-<h3 id="org10a9aea">Finding/discovering functionality</h3>
-<div class="outline-text-3" id="text-org10a9aea">
+<div id="outline-container-org882bfa2" class="outline-3">
+<h3 id="org882bfa2">Finding/discovering functionality</h3>
+<div class="outline-text-3" id="text-org882bfa2">
 <p>
 When looking for some kind of functionality or it's keybinding, it is often
 handy to use <a href="https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#discovering">the self-documenting features</a> of Spacemacs.
@@ -132,9 +150,9 @@ d</code>). Note them well, <b>THEY ARE PROBABLY THE MOST IMPORTANT FUNCTIONS ONE
 </p>
 </div>
 </div>
-<div id="outline-container-org6fe36d3" class="outline-3">
-<h3 id="org6fe36d3">Private packages/layers</h3>
-<div class="outline-text-3" id="text-org6fe36d3">
+<div id="outline-container-orgb9f0c3e" class="outline-3">
+<h3 id="orgb9f0c3e">Private packages/layers</h3>
+<div class="outline-text-3" id="text-orgb9f0c3e">
 <p>
 Instead of creating private layers directly in your <code>.emacs.d/private/</code>
 directory, consider to place them in a dedicated syncing directory (e.g. a
@@ -143,9 +161,9 @@ your .emacs.d/private/ directory. Even better create a github repository per lay
 </p>
 </div>
 </div>
-<div id="outline-container-org2796621" class="outline-3">
-<h3 id="org2796621">Org notes</h3>
-<div class="outline-text-3" id="text-org2796621">
+<div id="outline-container-orgc3f5d40" class="outline-3">
+<h3 id="orgc3f5d40">Org notes</h3>
+<div class="outline-text-3" id="text-orgc3f5d40">
 <p>
 Create an org folder in some syncing directory (e.g. Dropbox or Syncthing).
 Subsequently in that org folder create a .projectile file. Now you can use all
@@ -154,9 +172,9 @@ search withing all your notes files.
 </p>
 </div>
 </div>
-<div id="outline-container-orgdf0322a" class="outline-3">
-<h3 id="orgdf0322a">Deep-search</h3>
-<div class="outline-text-3" id="text-orgdf0322a">
+<div id="outline-container-orgde17fdb" class="outline-3">
+<h3 id="orgde17fdb">Deep-search</h3>
+<div class="outline-text-3" id="text-orgde17fdb">
 <p>
 Remember that ripgrep, ag etc. ignore files in .gitignore. Therefore you can not
 simply use them to search e.g. inside of elpa packages in your .emacs.d
@@ -164,36 +182,36 @@ directory. Instead either use <code>SPC s f</code> or use grep <code>SPC s g</co
 </p>
 </div>
 </div>
-<div id="outline-container-org12877f3" class="outline-3">
-<h3 id="org12877f3">Customizations</h3>
-<div class="outline-text-3" id="text-org12877f3">
+<div id="outline-container-org325a5e6" class="outline-3">
+<h3 id="org325a5e6">Customizations</h3>
+<div class="outline-text-3" id="text-org325a5e6">
 <ul class="org-ul">
 <li>set <code>dotspacemacs-distinguish-gui-tab</code> to <code>t</code> in your .spacemacs file so you can
 jump forward with <code>C-i</code> after jumping backward with <code>C-o</code>.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org1addbea" class="outline-3">
-<h3 id="org1addbea">Place <b>(transient-bind-q-to-quit)</b> at the end of user-config</h3>
-<div class="outline-text-3" id="text-org1addbea">
+<div id="outline-container-orga196ac5" class="outline-3">
+<h3 id="orga196ac5">Place <b>(transient-bind-q-to-quit)</b> at the end of user-config</h3>
+<div class="outline-text-3" id="text-orga196ac5">
 <p>
 I think this should be the default configuration in Spacemacs, because it is
 more vim-ish (you can find a discussion <a href="https://github.com/syl20bnr/spacemacs/issues/6992#issuecomment-684439951">here</a>).
 </p>
 </div>
 </div>
-<div id="outline-container-org2fa0e6f" class="outline-3">
-<h3 id="org2fa0e6f">Annotate PDF's</h3>
-<div class="outline-text-3" id="text-org2fa0e6f">
+<div id="outline-container-org9f32e43" class="outline-3">
+<h3 id="org9f32e43">Annotate PDF's</h3>
+<div class="outline-text-3" id="text-org9f32e43">
 <p>
 To make annotating pdf's more comfortable, set <code>pdf-annot-activate-annotation</code> to
 <code>t</code> and add <code>text-mode</code> to <code>evil-insert-state-modes</code>
 </p>
 </div>
 </div>
-<div id="outline-container-org971db80" class="outline-3">
-<h3 id="org971db80">Customize buffer newline</h3>
-<div class="outline-text-3" id="text-org971db80">
+<div id="outline-container-orgd08bceb" class="outline-3">
+<h3 id="orgd08bceb">Customize buffer newline</h3>
+<div class="outline-text-3" id="text-orgd08bceb">
 <p>
 In customize buffer, for capture template, to create a newline (instead of \n
 charachter in config file), use C-j or C-o <a href="https://lists.gnu.org/archive/html/emacs-orgmode/2010-11/msg01006.html">reference link</a>
@@ -201,23 +219,23 @@ charachter in config file), use C-j or C-o <a href="https://lists.gnu.org/archiv
 </div>
 </div>
 
-<div id="outline-container-org1ef7c6b" class="outline-3">
-<h3 id="org1ef7c6b">Spell check language</h3>
-<div class="outline-text-3" id="text-org1ef7c6b">
+<div id="outline-container-orga2c4dac" class="outline-3">
+<h3 id="orga2c4dac">Spell check language</h3>
+<div class="outline-text-3" id="text-orga2c4dac">
 <p>
 To get Dutch spell check install Dutch aspell dictionary and restart emacs (or maybe <code>SPC f e R</code> will work too)
 </p>
 </div>
 </div>
-<div id="outline-container-org06bb65c" class="outline-3">
-<h3 id="org06bb65c">
+<div id="outline-container-org8ef8722" class="outline-3">
+<h3 id="org8ef8722">
 <span class="todo TODO">TODO</span> Install single packages via <code>additional packages</code>
 </h3>
 </div>
 </div>
-<div id="outline-container-org9ec4ec7" class="outline-2">
-<h2 id="org9ec4ec7">Table of handy key-sequences</h2>
-<div class="outline-text-2" id="text-org9ec4ec7">
+<div id="outline-container-org63cd503" class="outline-2">
+<h2 id="org63cd503">Table of handy key-sequences</h2>
+<div class="outline-text-2" id="text-org63cd503">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup>
 <col class="org-left">
@@ -254,6 +272,21 @@ To get Dutch spell check install Dutch aspell dictionary and restart emacs (or m
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-orgb4a3c6f" class="outline-2">
+<h2 id="orgb4a3c6f">Org-mode</h2>
+<div class="outline-text-2" id="text-orgb4a3c6f">
+</div>
+<div id="outline-container-org0f735c4" class="outline-3">
+<h3 id="org0f735c4">Notifications</h3>
+<div class="outline-text-3" id="text-org0f735c4">
+<p>
+To get notifications from your org-mode items, e.g. tasks or agenda, use the
+notifications library by adding <code>(require 'notifications)</code> to the
+<code>dotspacemacs/user-config</code> function in your .spacemacs file.
+</p>
+</div>
 </div>
 </div>
     </div>
