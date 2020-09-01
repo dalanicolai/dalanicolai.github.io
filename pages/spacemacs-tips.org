@@ -16,21 +16,6 @@
 ** Use *o* instead of *w*
  In spacemacs a word(-object) is defined differently than in vim. To quickly edit
  full symbol name use =o= instead of =w= (e.g. for selecting a symbol use =vio=).
-** Place *(transient-bind-q-to-quit)* at the end of user-config
- I think this should be the default configuration in Spacemacs, because it is
- more vim-ish (you can find a discussion [[https://github.com/syl20bnr/spacemacs/issues/6992#issuecomment-684439951][here]]).
-** deep-search
- Remember that ripgrep, ag etc. ignore files in .gitignore. Therefore you can not
- simply use them to search e.g. inside of elpa packages in your .emacs.d
- directory. Instead either use =SPC s f= or use grep =SPC s g= there.
-** org notes
- Create an org folder in some syncing directory (e.g. Dropbox or Syncthing).
- Subsequently in that org folder create a .projectile file. Now you can use all
- projectile functions e.g. =SPC p f= to open a file within the project, or =SPC /= to
- search withing all your notes files.
-** customizations
- - set ~dotspacemacs-distinguish-gui-tab~ to ~t~ in your .spacemacs file so you can
-   jump forward with =C-i= after jumping backward with =C-o=.
 ** quick navigation within files
  To quickly navigate inside a file use =SPC j i=. Additionally one could choose to
 [[info:emacs#Specifying File Variables][set a local variable]] to start with the code folded using ~HideShow~. E.g. replace
@@ -38,9 +23,46 @@ the first line of your ~.spacemacs~ file by the following:
 #+BEGIN_SRC 
 ;; -*- mode: emacs-lisp; eval: (hs-hide-all); lexical-binding: t -*-
 #+END_SRC
+** Comments
+Lines can be (un)commented by selecting line with evil visual line =SPC V=
+followed by =SPC ;=. Use =SPC ; ;= to directly toggle single line comments.
+** Finding/discovering functionality
+When looking for some kind of functionality or it's keybinding, it is often
+handy to use [[https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#discovering][the self-documenting features]] of Spacemacs.
+
+For example to find how to paste (which is called yank in emacs) in evil-insert
+mode, type =M-m h d b= while in insert mode, and type "yank" (including double
+quotes) to quickly find keybindings to the yank function.
+
+As shown in the link above, there are many more =describe= functions (see =SPC h
+d=). Note them well, *THEY ARE PROBABLY THE MOST IMPORTANT FUNCTIONS ONE SHOULD*
+*KNOW FOR MASTERING (SPAC)EMACS*
+** Private packages/layers
+Instead of creating private layers directly in your =.emacs.d/private/=
+directory, consider to place them in a dedicated syncing directory (e.g. a
+folder in your Syncthing or Dropbox directory) and then create symbolic links in
+your .emacs.d/private/ directory. Even better create a github repository per layer.
+** org notes
+ Create an org folder in some syncing directory (e.g. Dropbox or Syncthing).
+ Subsequently in that org folder create a .projectile file. Now you can use all
+ projectile functions e.g. =SPC p f= to open a file within the project, or =SPC /= to
+ search withing all your notes files.
+** deep-search
+ Remember that ripgrep, ag etc. ignore files in .gitignore. Therefore you can not
+ simply use them to search e.g. inside of elpa packages in your .emacs.d
+ directory. Instead either use =SPC s f= or use grep =SPC s g= there.
+** customizations
+ - set ~dotspacemacs-distinguish-gui-tab~ to ~t~ in your .spacemacs file so you can
+   jump forward with =C-i= after jumping backward with =C-o=.
+** Place *(transient-bind-q-to-quit)* at the end of user-config
+ I think this should be the default configuration in Spacemacs, because it is
+ more vim-ish (you can find a discussion [[https://github.com/syl20bnr/spacemacs/issues/6992#issuecomment-684439951][here]]).
 ** Annotate PDF's
   To make annotating pdf's more comfortable, set ~pdf-annot-activate-annotation~ to
   ~t~ and add ~text-mode~ to ~evil-insert-state-modes~
+** Customize buffer newline
+In customize buffer, for capture template, to create a newline (instead of \n
+charachter in config file), use C-j or C-o [[https://lists.gnu.org/archive/html/emacs-orgmode/2010-11/msg01006.html][reference link]]
 
 * Table of handy key-sequences 
 
