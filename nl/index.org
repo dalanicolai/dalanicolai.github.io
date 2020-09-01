@@ -16,4 +16,4 @@ setup a nice workflow to create this website using the awesome [[https://orgmode
 [[https://www.spacemacs.org/][Spacemacs]] combined with the [[https://getnikola.com/][Nikola static-page generator]] with its [[https://plugins.getnikola.com/v8/orgmode/][org-mode
 plugin]]. Currently this website uses the [[https://getnikola.com/creating-a-theme.html][lanyon theme]].
 
-At the moment, I am only working on my [[../blog/]].
+At the moment, I am only working on my [[section:blog/][blog]].

@@ -23,6 +23,8 @@ For small angles the paraxial approximations \[\sin{\theta} \approx \theta,\:
 \frac{\sin{\theta}}{\cos{\theta}} \approx \theta\] can be used for calculating
 \(\theta\), \(\sin{\theta}\) and \(\tan{\theta}\).
 
+{{{TEASER_END}}}
+
 For a thin lens \(\theta = \arctan{\frac{D}{2f}}\), where \(D\) and \(f\) are
 respectively the diameter and the focal length of the lens. To obtain
 \(\frac{D}{2f}\) we use \(\frac{D}{2f} = \tan{\theta}\)

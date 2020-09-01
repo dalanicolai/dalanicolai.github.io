@@ -2,7 +2,7 @@
 .. title: Spacemacs Robot framework layer
 .. slug: spacemacs-robot-framework-layer
 .. date: 2020-03-30 17:33:18 UTC+02:00
-.. tags: spacemacs
+.. tags: spacemacs, robot framework
 .. category: spacemacs
 .. link: 
 .. description: 
