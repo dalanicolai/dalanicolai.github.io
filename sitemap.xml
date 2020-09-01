@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://dalanicolai.github.io/</loc>
-  <lastmod>2020-07-01T21:41:00Z</lastmod>
+  <lastmod>2020-09-01T07:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/2020/</loc>
@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/archive.html</loc>
-  <lastmod>2020-09-01T07:27:00Z</lastmod>
+  <lastmod>2020-09-01T07:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/blog/</loc>
@@ -23,7 +23,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/categories.html</loc>
-  <lastmod>2020-09-01T07:09:00Z</lastmod>
+  <lastmod>2020-09-01T07:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/categories/cat_nieuw/</loc>
@@ -71,7 +71,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/</loc>
-  <lastmod>2020-07-01T21:41:00Z</lastmod>
+  <lastmod>2020-09-01T07:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/2020/</loc>
@@ -79,7 +79,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/archive.html</loc>
-  <lastmod>2020-09-01T07:27:00Z</lastmod>
+  <lastmod>2020-09-01T07:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/blog/</loc>
@@ -87,7 +87,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/categories.html</loc>
-  <lastmod>2020-09-01T07:09:00Z</lastmod>
+  <lastmod>2020-09-01T07:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/categories/cat_nieuw/</loc>
@@ -132,12 +132,10 @@
  <url>
   <loc>https://dalanicolai.github.io/nl/posts/mdtest/</loc>
   <lastmod>2020-07-01T22:12:00Z</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="https://dalanicolai.github.io/posts/mdtest/" />
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/posts/nieuwe-test/</loc>
   <lastmod>2020-09-01T07:31:00Z</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="https://dalanicolai.github.io/posts/nieuwe-test/" />
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/posts/numerical-aperture-na-approximations/</loc>
@@ -150,8 +148,12 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://dalanicolai.github.io/posts/spacemacs-robot-framework-layer/" />
  </url>
  <url>
+  <loc>https://dalanicolai.github.io/nl/spacemacs-tips/</loc>
+  <lastmod>2020-09-01T07:38:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://dalanicolai.github.io/nl/tags.html</loc>
-  <lastmod>2020-09-01T07:27:00Z</lastmod>
+  <lastmod>2020-09-01T07:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/welcome/</loc>
@@ -174,8 +176,12 @@
   <lastmod>2020-06-20T10:57:00Z</lastmod>
  </url>
  <url>
+  <loc>https://dalanicolai.github.io/spacemacs-tips/</loc>
+  <lastmod>2020-09-01T07:38:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://dalanicolai.github.io/tags.html</loc>
-  <lastmod>2020-09-01T07:27:00Z</lastmod>
+  <lastmod>2020-09-01T07:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/welcome/</loc>

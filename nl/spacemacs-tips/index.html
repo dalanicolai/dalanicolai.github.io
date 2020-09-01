@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html prefix="" lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Spacemacs tips">
+<meta name="viewport" content="width=device-width">
+<title>Spacemacs tips | Dala's playground</title>
+<link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (nl)" href="../rss.xml">
+<link rel="canonical" href="https://dalanicolai.github.io/nl/spacemacs-tips/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Daniel Nicolai">
+<meta property="og:site_name" content="Dala's playground">
+<meta property="og:title" content="Spacemacs tips">
+<meta property="og:url" content="https://dalanicolai.github.io/nl/spacemacs-tips/">
+<meta property="og:description" content="Spacemacs tips">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-09-01T09:34:09+02:00">
+<meta property="article:tag" content="Spacemacs">
+<link rel="alternate" hreflang="en" href="../../spacemacs-tips/">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Ga door naar de hoofdinhoud</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        <div class="sidebar-item">
+            <p>A reserved <a href="https://getnikola.com" target="_blank">Nikola</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> for Jekyll,
+            ported to Nikola by <a href="https://twitter.com/ralsina" target="_blank">@ralsina</a>.</p>
+        </div>
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../archive.html">Archief</a>
+        <a class="sidebar-nav-item" href="../categories/">Tags</a>
+        <a class="sidebar-nav-item" href="../rss.xml">RSS-feed</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://dalanicolai.github.io/nl/" title="Dala's playground" rel="home">Dala's playground</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">Spacemacs tips</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div id="outline-container-orgc21aa88" class="outline-2">
+<h2 id="orgc21aa88">Spacemacs tips</h2>
+<div class="outline-text-2" id="text-orgc21aa88">
+</div>
+<div id="outline-container-org9667bac" class="outline-3">
+<h3 id="org9667bac">Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)</h3>
+<div class="outline-text-3" id="text-org9667bac">
+<p>
+Follow (ALL) the steps at <a href="https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html">the great practicalli website</a> to switch to develop branch
+</p>
+</div>
+</div>
+<div id="outline-container-org1694ead" class="outline-3">
+<h3 id="org1694ead">Use <b>o</b> instead of <b>w</b>
+</h3>
+<div class="outline-text-3" id="text-org1694ead">
+<p>
+In spacemacs a word(-object) is defined differently than in vim. To quickly edit
+full symbol name use <code>o</code> instead of <code>w</code> (e.g. for selecting a symbol use <code>vio</code>)
+</p>
+</div>
+</div>
+<div id="outline-container-org5199e5d" class="outline-3">
+<h3 id="org5199e5d">Place <b>(transient-bind-q-to-quit)</b> at the end of user-config</h3>
+<div class="outline-text-3" id="text-org5199e5d">
+<p>
+I think this should be the default configuration in Spacemacs, because it is
+more vim-ish (you can find a discussion <a href="https://github.com/syl20bnr/spacemacs/issues/6992#issuecomment-684439951">here</a>)
+</p>
+</div>
+</div>
+<div id="outline-container-org3697f02" class="outline-3">
+<h3 id="org3697f02">deep-search</h3>
+<div class="outline-text-3" id="text-org3697f02">
+<p>
+Remember that ripgrep, ag etc. ignore files in .gitignore. Therefore you can not
+simply use them to search e.g. inside of elpa packages in your .emacs.d
+directory. Instead use grep there <code>SPC s g</code>
+</p>
+</div>
+</div>
+<div id="outline-container-orgd7cfb87" class="outline-3">
+<h3 id="orgd7cfb87">org notes</h3>
+<div class="outline-text-3" id="text-orgd7cfb87">
+<p>
+Create an org folder in some syncing directory (e.g. Dropbox or Syncthing).
+Subsequently in that org folder create a .projectile file. Now you can use all
+projectile functions e.g. <code>SPC p f</code> to open a file within the project, or <code>SPC /</code> to
+search withing all your notes files.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf38f9e5" class="outline-3">
+<h3 id="orgf38f9e5">customizations</h3>
+<div class="outline-text-3" id="text-orgf38f9e5">
+<ul class="org-ul">
+<li>set <code>dotspacemacs-distinguish-gui-tab</code> to <code>t</code> in your .spacemacs file so you can
+jump forward with <code>C-i</code> after jumping backward with <code>C-o</code>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1e0e24c" class="outline-3">
+<h3 id="org1e0e24c">quick navigation within files</h3>
+<div class="outline-text-3" id="text-org1e0e24c">
+<p>
+To quickly navigate inside a file use <code>SPC j i</code>. Additionally one could choose to <a href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Specifying-File-Variables">set a local variable</a> to start with the code folded using <code>HideShow</code>. E.g. replace
+the first line of your <code>.spacemacs</code> file by the following:
+</p>
+</div>
+</div>
+<div id="outline-container-org6411a2a" class="outline-3">
+<h3 id="org6411a2a">Annotate PDF's</h3>
+<div class="outline-text-3" id="text-org6411a2a">
+<p>
+To make annotating pdf's more comfortable, set <code>pdf-annot-activate-annotation</code> to
+<code>t</code> and add <code>text-mode</code> to <code>evil-insert-state-modes</code>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9cb67ca" class="outline-2">
+<h2 id="org9cb67ca">Table of handy key-sequences</h2>
+<div class="outline-text-2" id="text-org9cb67ca">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left">
+<col class="org-left">
+</colgroup>
+<thead><tr>
+<th scope="col" class="org-left">Actions</th>
+<th scope="col" class="org-left">Handy key-sequence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="org-left">Quickly find recent files</td>
+<td class="org-left"><code>SPC f r</code></td>
+</tr>
+<tr>
+<td class="org-left">instead of <code>yiw</code> in vim (which breaks at <code>-</code> and <code>_</code>)</td>
+<td class="org-left"><code>yio</code></td>
+</tr>
+<tr>
+<td class="org-left">jump quickly to word in any buffer of current frame</td>
+<td class="org-left"><code>SPC j j / SPC j w</code></td>
+</tr>
+<tr>
+<td class="org-left">to navigate your dotfile, your org-files or just code files</td>
+<td class="org-left"><code>SPC j i</code></td>
+</tr>
+<tr>
+<td class="org-left">reformat paragraphs in org-mode (wrap lines)</td>
+<td class="org-left"><code>M-q</code></td>
+</tr>
+<tr>
+<td class="org-left">Clear highlights after evil search</td>
+<td class="org-left"><code>SPC s c</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+    </div>
+    
+
+</article><footer id="footer"><p>Contents © 2020         <a href="mailto:dalanicolai@gmail.com">Daniel Nicolai</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("nl");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
