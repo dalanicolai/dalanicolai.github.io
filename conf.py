@@ -139,12 +139,15 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/blog/", "Blog"),
+        ("/spacemacs-tips/", "Spacemacs"),
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS feed"),
     ),
 
     "nl": (
+        ("/blog/", "Blog"),
+        ("/spacemacs-tips/", "Spacemacs"),
         ("/nl/archive.html", "Archief"),
         ("/nl/categories/", "Tags"),
         ("/nl/rss.xml", "RSS-feed"),
