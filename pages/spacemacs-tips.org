@@ -1,5 +1,5 @@
 #+BEGIN_COMMENT
-.. title: Spacemacs tips
+.. title: Spacemacs
 .. slug: spacemacs-tips
 .. date: 2020-09-01 09:34:09 UTC+02:00
 .. tags: Spacemacs
@@ -15,7 +15,17 @@
 communicate with Intel hardware.”
 – Erwin, /#emacs/, Freenode.
 #+END_QUOTE
+* Introduction and motivation
+  As I prefer to work on other things then studying documentation for how to use
+  certain tools, I will keep this introduction very short.
 
+In short Emacs is a universal text editing environment that is implemented as
+and powered by a virtual lisp-machine. Spacemacs is a community based set of
+configurations which focuses on vim-style editing with the notable - and in my
+opinion genius - improvement of using the space bar as a leader key for
+navigation and controlling the lisp-machine. A crucial difference between Emacs
+and any other text editor is its focus on extensibility and self-documentation
+which makes it the ultimate editor for hackers and community driven development.
 * Spacemacs tips
 ** Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)
  Follow (ALL) the steps at [[https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html][the great practicalli website]] to switch to develop branch.
@@ -83,3 +93,8 @@ To get Dutch spell check install Dutch aspell dictionary and restart emacs (or m
 | to navigate your dotfile, your org-files or just code files | =SPC j i=            |
 | reformat paragraphs in org-mode (wrap lines)                | =M-q=                |
 | Clear highlights after evil search                          | =SPC s c=            |
+* Org-mode
+** Notifications
+To get notifications from your org-mode items, e.g. tasks or agenda, use the
+notifications library by adding =(require 'notifications)= to the
+=dotspacemacs/user-config= function in your .spacemacs file.
