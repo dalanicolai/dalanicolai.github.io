@@ -126,6 +126,13 @@ contextual information."
     (format "<img src=\"/%s\" alt=\"%s\"/>" path desc))))
 (org-add-link-type "file" nil 'org-file-link-img-url-export)
 
+;; Export link to section
+(defun org-section-url-export (path desc format)
+  (cond
+   ((eq format 'html)
+    (format "<a href=\"%s\">%s</a>" path desc))))
+(org-add-link-type "section" nil 'org-section-url-export)
+
 ;; Export function used by Nikola.
 (defun nikola-html-export (infile outfile)
   "Export the body only of the input file and write it to

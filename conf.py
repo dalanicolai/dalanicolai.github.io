@@ -378,21 +378,18 @@ COMPILERS = {
 #     output / TRANSLATION[lang] / TAGS_INDEX_PATH
 # with an arbitrary relative path TAGS_INDEX_PATH.
 # (translatable)
-# TAGS_INDEX_PATH = "tags.html"
+TAGS_INDEX_PATH = "tags.html"
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
 # TAG_PAGES_ARE_INDEXES = False
 
-# Set descriptions for tag pages to make them more interesting. The
-# default is no description. The value is used in the meta description
-# and displayed underneath the tag list or index page’s title.
-# TAG_DESCRIPTIONS = {
-#    DEFAULT_LANG: {
-#        "blogging": "Meta-blog posts about blogging.",
-#        "open source": "My contributions to my many, varied, ever-changing, and eternal libre software projects."
-#    },
-# }
+# Set descriptions for tag pages to make them more interesting. The default is
+# no description. The value is used in the meta description and displayed
+# underneath the tag list or index page’s title. TAG_DESCRIPTIONS = {
+# DEFAULT_LANG: { "blogging": "Meta-blog posts about blogging.", "open source":
+# "My contributions to my many, varied, ever-changing, and eternal libre
+# software projects." }, }
 
 # Set special titles for tag pages. The default is "Posts about TAG".
 # TAG_TITLES = {
@@ -432,8 +429,8 @@ HIDDEN_TAGS = ['mathjax']
 # output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category.html (list of posts for a category)
 # output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category RSS_EXTENSION (RSS feed for a category)
 # (translatable)
-# CATEGORY_PATH = "categories"
-# CATEGORY_PREFIX = "cat_"
+CATEGORY_PATH = "categories"
+CATEGORY_PREFIX = "cat_"
 
 # By default, the list of categories is stored in
 #     output / TRANSLATION[lang] / CATEGORY_PATH / index.html
@@ -441,7 +438,7 @@ HIDDEN_TAGS = ['mathjax']
 #     output / TRANSLATION[lang] / CATEGORIES_INDEX_PATH
 # with an arbitrary relative path CATEGORIES_INDEX_PATH.
 # (translatable)
-# CATEGORIES_INDEX_PATH = "categories.html"
+CATEGORIES_INDEX_PATH = "categories.html"
 
 # If CATEGORY_ALLOW_HIERARCHIES is set to True, categories can be organized in
 # hierarchies. For a post, the whole path in the hierarchy must be specified,
