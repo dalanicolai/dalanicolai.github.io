@@ -16,7 +16,7 @@ communicate with Intel hardware.”
 – Erwin, /#emacs/, Freenode.
 #+END_QUOTE
 * Introduction and motivation
-  As I prefer to work on other things then studying documentation for how to use
+  As I prefer to work on other things than studying documentation for how to use
   certain tools, I will keep this introduction very short.
 
 In short Emacs is a universal text editing environment that is implemented as
