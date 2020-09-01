@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/archive.html</loc>
-  <lastmod>2020-09-01T07:38:00Z</lastmod>
+  <lastmod>2020-09-01T07:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/blog/</loc>
@@ -23,11 +23,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/categories.html</loc>
-  <lastmod>2020-09-01T07:38:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/categories/cat_nieuw/</loc>
-  <lastmod>2020-07-01T22:12:00Z</lastmod>
+  <lastmod>2020-09-01T07:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/categories/cat_optics/</loc>
@@ -36,14 +32,6 @@
  <url>
   <loc>https://dalanicolai.github.io/categories/cat_spacemacs/</loc>
   <lastmod>2020-03-30T13:53:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/categories/hallo/</loc>
-  <lastmod>2020-07-01T22:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/categories/hello/</loc>
-  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/categories/optics/</loc>
@@ -56,10 +44,6 @@
  <url>
   <loc>https://dalanicolai.github.io/categories/spacemacs/</loc>
   <lastmod>2020-03-30T13:53:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/categories/sukkels/</loc>
-  <lastmod>2020-07-01T22:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/galleries/</loc>
@@ -79,7 +63,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/archive.html</loc>
-  <lastmod>2020-09-01T07:38:00Z</lastmod>
+  <lastmod>2020-09-01T07:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/blog/</loc>
@@ -87,11 +71,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/categories.html</loc>
-  <lastmod>2020-09-01T07:38:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/nl/categories/cat_nieuw/</loc>
-  <lastmod>2020-07-01T22:12:00Z</lastmod>
+  <lastmod>2020-09-01T07:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/categories/cat_optics/</loc>
@@ -100,14 +80,6 @@
  <url>
   <loc>https://dalanicolai.github.io/nl/categories/cat_spacemacs/</loc>
   <lastmod>2020-03-30T13:53:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/nl/categories/hallo/</loc>
-  <lastmod>2020-07-01T22:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/nl/categories/hello/</loc>
-  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/categories/optics/</loc>
@@ -122,20 +94,8 @@
   <lastmod>2020-03-30T13:53:00Z</lastmod>
  </url>
  <url>
-  <loc>https://dalanicolai.github.io/nl/categories/sukkels/</loc>
-  <lastmod>2020-07-01T22:12:00Z</lastmod>
- </url>
- <url>
   <loc>https://dalanicolai.github.io/nl/galleries/</loc>
   <lastmod>2020-03-30T13:53:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/nl/posts/mdtest/</loc>
-  <lastmod>2020-07-01T22:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/nl/posts/nieuwe-test/</loc>
-  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/posts/numerical-aperture-na-approximations/</loc>
@@ -153,19 +113,11 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/tags.html</loc>
-  <lastmod>2020-09-01T07:38:00Z</lastmod>
+  <lastmod>2020-09-01T07:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/welcome/</loc>
   <lastmod>2020-06-30T14:16:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/posts/mdtest/</loc>
-  <lastmod>2020-07-01T22:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/posts/nieuwe-test/</loc>
-  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/posts/numerical-aperture-na-approximations/</loc>
@@ -181,7 +133,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/tags.html</loc>
-  <lastmod>2020-09-01T07:38:00Z</lastmod>
+  <lastmod>2020-09-01T07:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/welcome/</loc>
