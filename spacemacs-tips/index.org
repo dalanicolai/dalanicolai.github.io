@@ -12,17 +12,17 @@
 
 * Spacemacs tips
 ** Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)
- Follow (ALL) the steps at [[https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html][the great practicalli website]] to switch to develop branch
+ Follow (ALL) the steps at [[https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html][the great practicalli website]] to switch to develop branch.
 ** Use *o* instead of *w*
  In spacemacs a word(-object) is defined differently than in vim. To quickly edit
- full symbol name use =o= instead of =w= (e.g. for selecting a symbol use =vio=)
+ full symbol name use =o= instead of =w= (e.g. for selecting a symbol use =vio=).
 ** Place *(transient-bind-q-to-quit)* at the end of user-config
  I think this should be the default configuration in Spacemacs, because it is
- more vim-ish (you can find a discussion [[https://github.com/syl20bnr/spacemacs/issues/6992#issuecomment-684439951][here]])
+ more vim-ish (you can find a discussion [[https://github.com/syl20bnr/spacemacs/issues/6992#issuecomment-684439951][here]]).
 ** deep-search
  Remember that ripgrep, ag etc. ignore files in .gitignore. Therefore you can not
  simply use them to search e.g. inside of elpa packages in your .emacs.d
- directory. Instead use grep there =SPC s g=
+ directory. Instead either use =SPC s f= or use grep =SPC s g= there.
 ** org notes
  Create an org folder in some syncing directory (e.g. Dropbox or Syncthing).
  Subsequently in that org folder create a .projectile file. Now you can use all
@@ -30,11 +30,14 @@
  search withing all your notes files.
 ** customizations
  - set ~dotspacemacs-distinguish-gui-tab~ to ~t~ in your .spacemacs file so you can
-   jump forward with =C-i= after jumping backward with =C-o=
+   jump forward with =C-i= after jumping backward with =C-o=.
 ** quick navigation within files
- To quickly navigate inside a file use =SPC j i=. Additionally one could choose to [[info:emacs#Specifying File
-  Variables][set a local variable]] to start with the code folded using ~HideShow~. E.g. replace
- the first line of your ~.spacemacs~ file by the following:
+ To quickly navigate inside a file use =SPC j i=. Additionally one could choose to
+[[info:emacs#Specifying File Variables][set a local variable]] to start with the code folded using ~HideShow~. E.g. replace
+the first line of your ~.spacemacs~ file by the following:
+#+BEGIN_SRC 
+;; -*- mode: emacs-lisp; eval: (hs-hide-all); lexical-binding: t -*-
+#+END_SRC
 ** Annotate PDF's
   To make annotating pdf's more comfortable, set ~pdf-annot-activate-annotation~ to
   ~t~ and add ~text-mode~ to ~evil-insert-state-modes~

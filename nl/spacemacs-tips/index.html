@@ -60,50 +60,50 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-orgc21aa88" class="outline-2">
-<h2 id="orgc21aa88">Spacemacs tips</h2>
-<div class="outline-text-2" id="text-orgc21aa88">
+    <div id="outline-container-org3afe84f" class="outline-2">
+<h2 id="org3afe84f">Spacemacs tips</h2>
+<div class="outline-text-2" id="text-org3afe84f">
 </div>
-<div id="outline-container-org9667bac" class="outline-3">
-<h3 id="org9667bac">Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)</h3>
-<div class="outline-text-3" id="text-org9667bac">
+<div id="outline-container-orgaedf5f3" class="outline-3">
+<h3 id="orgaedf5f3">Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)</h3>
+<div class="outline-text-3" id="text-orgaedf5f3">
 <p>
-Follow (ALL) the steps at <a href="https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html">the great practicalli website</a> to switch to develop branch
+Follow (ALL) the steps at <a href="https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html">the great practicalli website</a> to switch to develop branch.
 </p>
 </div>
 </div>
-<div id="outline-container-org1694ead" class="outline-3">
-<h3 id="org1694ead">Use <b>o</b> instead of <b>w</b>
+<div id="outline-container-org2fc1206" class="outline-3">
+<h3 id="org2fc1206">Use <b>o</b> instead of <b>w</b>
 </h3>
-<div class="outline-text-3" id="text-org1694ead">
+<div class="outline-text-3" id="text-org2fc1206">
 <p>
 In spacemacs a word(-object) is defined differently than in vim. To quickly edit
-full symbol name use <code>o</code> instead of <code>w</code> (e.g. for selecting a symbol use <code>vio</code>)
+full symbol name use <code>o</code> instead of <code>w</code> (e.g. for selecting a symbol use <code>vio</code>).
 </p>
 </div>
 </div>
-<div id="outline-container-org5199e5d" class="outline-3">
-<h3 id="org5199e5d">Place <b>(transient-bind-q-to-quit)</b> at the end of user-config</h3>
-<div class="outline-text-3" id="text-org5199e5d">
+<div id="outline-container-org7b31e45" class="outline-3">
+<h3 id="org7b31e45">Place <b>(transient-bind-q-to-quit)</b> at the end of user-config</h3>
+<div class="outline-text-3" id="text-org7b31e45">
 <p>
 I think this should be the default configuration in Spacemacs, because it is
-more vim-ish (you can find a discussion <a href="https://github.com/syl20bnr/spacemacs/issues/6992#issuecomment-684439951">here</a>)
+more vim-ish (you can find a discussion <a href="https://github.com/syl20bnr/spacemacs/issues/6992#issuecomment-684439951">here</a>).
 </p>
 </div>
 </div>
-<div id="outline-container-org3697f02" class="outline-3">
-<h3 id="org3697f02">deep-search</h3>
-<div class="outline-text-3" id="text-org3697f02">
+<div id="outline-container-orgdb514cd" class="outline-3">
+<h3 id="orgdb514cd">deep-search</h3>
+<div class="outline-text-3" id="text-orgdb514cd">
 <p>
 Remember that ripgrep, ag etc. ignore files in .gitignore. Therefore you can not
 simply use them to search e.g. inside of elpa packages in your .emacs.d
-directory. Instead use grep there <code>SPC s g</code>
+directory. Instead either use <code>SPC s f</code> or use grep <code>SPC s g</code> there.
 </p>
 </div>
 </div>
-<div id="outline-container-orgd7cfb87" class="outline-3">
-<h3 id="orgd7cfb87">org notes</h3>
-<div class="outline-text-3" id="text-orgd7cfb87">
+<div id="outline-container-orga72bb85" class="outline-3">
+<h3 id="orga72bb85">org notes</h3>
+<div class="outline-text-3" id="text-orga72bb85">
 <p>
 Create an org folder in some syncing directory (e.g. Dropbox or Syncthing).
 Subsequently in that org folder create a .projectile file. Now you can use all
@@ -112,28 +112,30 @@ search withing all your notes files.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf38f9e5" class="outline-3">
-<h3 id="orgf38f9e5">customizations</h3>
-<div class="outline-text-3" id="text-orgf38f9e5">
+<div id="outline-container-org8f9677c" class="outline-3">
+<h3 id="org8f9677c">customizations</h3>
+<div class="outline-text-3" id="text-org8f9677c">
 <ul class="org-ul">
 <li>set <code>dotspacemacs-distinguish-gui-tab</code> to <code>t</code> in your .spacemacs file so you can
-jump forward with <code>C-i</code> after jumping backward with <code>C-o</code>
-</li>
+jump forward with <code>C-i</code> after jumping backward with <code>C-o</code>.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org1e0e24c" class="outline-3">
-<h3 id="org1e0e24c">quick navigation within files</h3>
-<div class="outline-text-3" id="text-org1e0e24c">
+<div id="outline-container-org73dc931" class="outline-3">
+<h3 id="org73dc931">quick navigation within files</h3>
+<div class="outline-text-3" id="text-org73dc931">
 <p>
-To quickly navigate inside a file use <code>SPC j i</code>. Additionally one could choose to <a href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Specifying-File-Variables">set a local variable</a> to start with the code folded using <code>HideShow</code>. E.g. replace
+ To quickly navigate inside a file use <code>SPC j i</code>. Additionally one could choose to
+<a href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Specifying-File-Variables">set a local variable</a> to start with the code folded using <code>HideShow</code>. E.g. replace
 the first line of your <code>.spacemacs</code> file by the following:
 </p>
+<div class="highlight"><pre><span></span>;; -*- mode: emacs-lisp; eval: (hs-hide-all); lexical-binding: t -*-
+</pre></div>
 </div>
 </div>
-<div id="outline-container-org6411a2a" class="outline-3">
-<h3 id="org6411a2a">Annotate PDF's</h3>
-<div class="outline-text-3" id="text-org6411a2a">
+<div id="outline-container-org7058a18" class="outline-3">
+<h3 id="org7058a18">Annotate PDF's</h3>
+<div class="outline-text-3" id="text-org7058a18">
 <p>
 To make annotating pdf's more comfortable, set <code>pdf-annot-activate-annotation</code> to
 <code>t</code> and add <code>text-mode</code> to <code>evil-insert-state-modes</code>
@@ -142,9 +144,9 @@ To make annotating pdf's more comfortable, set <code>pdf-annot-activate-annotati
 </div>
 </div>
 
-<div id="outline-container-org9cb67ca" class="outline-2">
-<h2 id="org9cb67ca">Table of handy key-sequences</h2>
-<div class="outline-text-2" id="text-org9cb67ca">
+<div id="outline-container-orgd292234" class="outline-2">
+<h2 id="orgd292234">Table of handy key-sequences</h2>
+<div class="outline-text-2" id="text-orgd292234">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup>
 <col class="org-left">
