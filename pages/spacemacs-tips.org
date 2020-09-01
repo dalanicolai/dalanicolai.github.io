@@ -10,6 +10,12 @@
 
 #+END_COMMENT
 
+#+BEGIN_QUOTE
+“I’m using Linux. A library that emacs uses to
+communicate with Intel hardware.”
+– Erwin, /#emacs/, Freenode.
+#+END_QUOTE
+
 * Spacemacs tips
 ** Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)
  Follow (ALL) the steps at [[https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html][the great practicalli website]] to switch to develop branch.
@@ -64,6 +70,9 @@ your .emacs.d/private/ directory. Even better create a github repository per lay
 In customize buffer, for capture template, to create a newline (instead of \n
 charachter in config file), use C-j or C-o [[https://lists.gnu.org/archive/html/emacs-orgmode/2010-11/msg01006.html][reference link]]
 
+** Spell check language
+To get Dutch spell check install Dutch aspell dictionary and restart emacs (or maybe ~SPC f e R~ will work too)
+** TODO Install single packages via =additional packages=
 * Table of handy key-sequences 
 
 | Actions                                                     | Handy key-sequence |
