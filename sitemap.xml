@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/archive.html</loc>
-  <lastmod>2020-09-01T07:22:00Z</lastmod>
+  <lastmod>2020-09-01T07:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/blog/</loc>
@@ -26,10 +26,6 @@
   <lastmod>2020-09-01T07:09:00Z</lastmod>
  </url>
  <url>
-  <loc>https://dalanicolai.github.io/categories/</loc>
-  <lastmod>2020-07-01T22:12:00Z</lastmod>
- </url>
- <url>
   <loc>https://dalanicolai.github.io/categories/cat_nieuw/</loc>
   <lastmod>2020-07-01T22:12:00Z</lastmod>
  </url>
@@ -38,16 +34,8 @@
   <lastmod>2020-06-29T15:03:00Z</lastmod>
  </url>
  <url>
-  <loc>https://dalanicolai.github.io/categories/cat_spacemacs-robot-framework/</loc>
-  <lastmod>2020-07-01T21:38:00Z</lastmod>
- </url>
- <url>
   <loc>https://dalanicolai.github.io/categories/cat_spacemacs/</loc>
   <lastmod>2020-03-30T13:53:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/categories/cat_tests/</loc>
-  <lastmod>2020-07-01T21:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/categories/hallo/</loc>
@@ -55,7 +43,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/categories/hello/</loc>
-  <lastmod>2020-07-01T21:53:00Z</lastmod>
+  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/categories/optics/</loc>
@@ -91,7 +79,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/archive.html</loc>
-  <lastmod>2020-09-01T07:22:00Z</lastmod>
+  <lastmod>2020-09-01T07:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/blog/</loc>
@@ -102,10 +90,6 @@
   <lastmod>2020-09-01T07:09:00Z</lastmod>
  </url>
  <url>
-  <loc>https://dalanicolai.github.io/nl/categories/</loc>
-  <lastmod>2020-07-01T22:12:00Z</lastmod>
- </url>
- <url>
   <loc>https://dalanicolai.github.io/nl/categories/cat_nieuw/</loc>
   <lastmod>2020-07-01T22:12:00Z</lastmod>
  </url>
@@ -114,16 +98,8 @@
   <lastmod>2020-06-29T15:03:00Z</lastmod>
  </url>
  <url>
-  <loc>https://dalanicolai.github.io/nl/categories/cat_spacemacs-robot-framework/</loc>
-  <lastmod>2020-07-01T21:38:00Z</lastmod>
- </url>
- <url>
   <loc>https://dalanicolai.github.io/nl/categories/cat_spacemacs/</loc>
   <lastmod>2020-03-30T13:53:00Z</lastmod>
- </url>
- <url>
-  <loc>https://dalanicolai.github.io/nl/categories/cat_tests/</loc>
-  <lastmod>2020-07-01T21:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/categories/hallo/</loc>
@@ -131,7 +107,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/categories/hello/</loc>
-  <lastmod>2020-07-01T21:53:00Z</lastmod>
+  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/categories/optics/</loc>
@@ -154,13 +130,14 @@
   <lastmod>2020-03-30T13:53:00Z</lastmod>
  </url>
  <url>
-  <loc>https://dalanicolai.github.io/nl/posts/marktest/</loc>
-  <lastmod>2020-07-01T21:52:00Z</lastmod>
- </url>
- <url>
   <loc>https://dalanicolai.github.io/nl/posts/mdtest/</loc>
   <lastmod>2020-07-01T22:12:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://dalanicolai.github.io/posts/mdtest/" />
+ </url>
+ <url>
+  <loc>https://dalanicolai.github.io/nl/posts/nieuwe-test/</loc>
+  <lastmod>2020-09-01T07:31:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://dalanicolai.github.io/posts/nieuwe-test/" />
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/posts/numerical-aperture-na-approximations/</loc>
@@ -174,19 +151,19 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/tags.html</loc>
-  <lastmod>2020-09-01T07:22:00Z</lastmod>
+  <lastmod>2020-09-01T07:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/welcome/</loc>
   <lastmod>2020-06-30T14:16:00Z</lastmod>
  </url>
  <url>
-  <loc>https://dalanicolai.github.io/posts/marktest/</loc>
-  <lastmod>2020-07-01T21:52:00Z</lastmod>
- </url>
- <url>
   <loc>https://dalanicolai.github.io/posts/mdtest/</loc>
   <lastmod>2020-07-01T22:12:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://dalanicolai.github.io/posts/nieuwe-test/</loc>
+  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/posts/numerical-aperture-na-approximations/</loc>
@@ -198,7 +175,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/tags.html</loc>
-  <lastmod>2020-09-01T07:22:00Z</lastmod>
+  <lastmod>2020-09-01T07:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/welcome/</loc>

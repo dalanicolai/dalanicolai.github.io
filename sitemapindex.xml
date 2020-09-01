@@ -14,16 +14,8 @@
   <lastmod>2020-07-01T22:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://dalanicolai.github.io/categories/cat_spacemacs-robot-framework.xml</loc>
-  <lastmod>2020-07-01T21:38:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://dalanicolai.github.io/categories/cat_spacemacs.xml</loc>
   <lastmod>2020-07-01T21:42:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://dalanicolai.github.io/categories/cat_tests.xml</loc>
-  <lastmod>2020-07-01T21:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/categories/hallo.xml</loc>
@@ -31,7 +23,7 @@
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/categories/hello.xml</loc>
-  <lastmod>2020-07-01T21:53:00Z</lastmod>
+  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/categories/optics.xml</loc>
@@ -62,16 +54,8 @@
   <lastmod>2020-07-01T22:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://dalanicolai.github.io/nl/categories/cat_spacemacs-robot-framework.xml</loc>
-  <lastmod>2020-07-01T21:38:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/cat_spacemacs.xml</loc>
   <lastmod>2020-07-01T21:42:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://dalanicolai.github.io/nl/categories/cat_tests.xml</loc>
-  <lastmod>2020-07-01T21:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/hallo.xml</loc>
@@ -79,7 +63,7 @@
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/hello.xml</loc>
-  <lastmod>2020-07-01T21:53:00Z</lastmod>
+  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/optics.xml</loc>
@@ -103,14 +87,14 @@
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/nl/rss.xml</loc>
-  <lastmod>2020-07-01T22:14:00Z</lastmod>
+  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/rss.xml</loc>
-  <lastmod>2020-07-01T22:14:00Z</lastmod>
+  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/sitemap.xml</loc>
-  <lastmod>2020-09-01T07:22:00Z</lastmod>
+  <lastmod>2020-09-01T07:31:00Z</lastmod>
  </sitemap>
 </sitemapindex>
