@@ -3,7 +3,7 @@
 ;; Load org-mode
 ;; Requires org-mode v8.x
 
-(load "~/.emacs.d/elpa/26.3/develop/htmlize-20191111.2130/htmlize.el")
+(load "~/.emacs.d/elpa/27.1/develop/htmlize-20200816.746/htmlize.el")
 (require 'package)
 (setq package-load-list '((htmlize t)))
 (package-initialize)
