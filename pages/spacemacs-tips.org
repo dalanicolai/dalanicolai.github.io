@@ -29,7 +29,7 @@ which makes it the ultimate editor for hackers and community driven development.
 * Spacemacs tips
 ** Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)
  Follow (ALL) the steps at [[https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html][the great practicalli website]] to switch to develop branch.
-** Use *o* instead of *w*
+** Use *o* instead of *w* for editing of symbol(-name)
  In spacemacs a word(-object) is defined differently than in vim. To quickly edit
  full symbol name use =o= instead of =w= (e.g. for selecting a symbol use =v i o=).
 ** Quick navigation within files
@@ -83,6 +83,7 @@ charachter in config file), use C-j or C-o [[https://lists.gnu.org/archive/html/
 ** Spell check language
 To get Dutch spell check install Dutch aspell dictionary and restart emacs (or maybe ~SPC f e R~ will work too)
 ** TODO Install single packages via =additional packages=
+   
 * Table of handy key-sequences 
 
 | Actions                                                     | Handy key-sequence |
@@ -93,8 +94,50 @@ To get Dutch spell check install Dutch aspell dictionary and restart emacs (or m
 | to navigate your dotfile, your org-files or just code files | =SPC j i=            |
 | reformat paragraphs in org-mode (wrap lines)                | =M-q=                |
 | Clear highlights after evil search                          | =SPC s c=            |
+** windows
+| switch window by number | SPC number / =M-number= |
+| switch window (cyclic)  | SPC w w               |
+** commenting
+| single line    | SPC ; ;                             |
+| multiple lines | visual select lines and press =SPC ;= |
+
 * Org-mode
 ** Notifications
 To get notifications from your org-mode items, e.g. tasks or agenda, use the
 notifications library by adding =(require 'notifications)= to the
 =dotspacemacs/user-config= function in your .spacemacs file.
+
+* help/introspection
+This is the most important table. You should note remember and remember to use
+all options. Therefore *study this list carefully*.
+
+*IMPORTANT COMMENTS:* 
+- In info mode most of the evil-bindings are not well
+implemented. Therefore it might be handy to read the Emacs documentation about
+how to navigate the info manuals.
+
+- The describe function is extremely handy. You should study all describe
+  options, (especially: bindings, function, key, mode, variable).
+Although the describe function and variable functionalities might get useful
+only when writing or studying lisp, the other options are really handy for quick
+help lookups.
+
+- With the /binding/ option you can quickly lookup key-bindings by fuzzy search on
+  function name (e.g. 'upcase', 'comment', 'jump', 'delete').
+- With the /key/ option you can quickly find the function name bound to a
+  key-sequence by searching on key sequence (e.g. =SPC l=, or =g g=).
+- With the /mode/ option you can quickly get information about the current major
+  mode (e.g. special functions and bindings for the python mode)
+
+** help/introspection
+| Go to info                             | C-h i   |
+| Describe ANYTHING                      | SPC h d |
+| Execute (or choose action on) function | SPC SPC |
+
+=SPC SPC= opens /HELM M-x/, you can type a name of any function and either execute
+it or type =C-z= to choose from a list of alternative actions (e.g. describe, go
+to definition)
+
+When the cursor (usually called POINT in Emacs) is on a function or variable
+name, one can use their respective describe key-sequences to quickly get info
+about them.

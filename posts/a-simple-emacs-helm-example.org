@@ -1,0 +1,27 @@
+#+BEGIN_COMMENT
+.. title: A simple Emacs helm example
+.. slug: a-simple-emacs-helm-example
+.. date: 2020-09-01 17:05:32 UTC+02:00
+.. tags: spacemacs
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+.. author: Daniel Nicolai
+
+#+END_COMMENT
+
+
+Although I recommend Ivy over Helm for most people, because Ivy's use and
+documentation is much more approachable, there might be some time that you can
+not avoid using Helm. I find Helm's documentation quite cryptic, with very few
+examples. Therefore here follow two simple examples to help you out quickly.
+#+begin_src emacs-lisp
+(defun helm-print ()
+  (interactive)
+    (helm :sources (helm-build-sync-source "Name"
+                     :candidates '(a b c)
+                     :action '(("print" . (lambda (x)
+                                             (print x)))))))
+
+#+end_src
