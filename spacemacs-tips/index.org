@@ -11,7 +11,7 @@
 #+END_COMMENT
 
 #+BEGIN_QUOTE
-“I’m using Linux. A library that emacs uses to
+“I’m using Linux. A library that Emacs uses to
 communicate with Intel hardware.”
 – Erwin, /#emacs/, Freenode.
 #+END_QUOTE
@@ -31,7 +31,7 @@ which makes it the ultimate editor for hackers and community driven development.
  Follow (ALL) the steps at [[https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html][the great practicalli website]] to switch to develop branch.
 ** Use *o* instead of *w*
  In spacemacs a word(-object) is defined differently than in vim. To quickly edit
- full symbol name use =o= instead of =w= (e.g. for selecting a symbol use =vio=).
+ full symbol name use =o= instead of =w= (e.g. for selecting a symbol use =v i o=).
 ** Quick navigation within files
  To quickly navigate inside a file use =SPC j i=. Additionally one could choose to
 [[info:emacs#Specifying File Variables][set a local variable]] to start with the code folded using ~HideShow~. E.g. replace
@@ -87,8 +87,8 @@ To get Dutch spell check install Dutch aspell dictionary and restart emacs (or m
 
 | Actions                                                     | Handy key-sequence |
 |-------------------------------------------------------------+--------------------|
-| Quickly find recent files                                   | =SPC f r=          |
-| instead of =yiw= in vim (which breaks at =-= and =_=)             | =yio=              |
+| Quickly find recent files                                   | =SPC f r=            |
+| instead of =v i w= in vim (which breaks at =-= and =_=)           | =y i o=              |
 | jump quickly to word in any buffer of current frame         | =SPC j j / SPC j w=  |
 | to navigate your dotfile, your org-files or just code files | =SPC j i=            |
 | reformat paragraphs in org-mode (wrap lines)                | =M-q=                |
