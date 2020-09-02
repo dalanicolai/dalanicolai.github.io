@@ -14,6 +14,10 @@
   <lastmod>2020-07-01T21:42:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://dalanicolai.github.io/categories/demo.xml</loc>
+  <lastmod>2020-09-02T11:18:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://dalanicolai.github.io/categories/optics.xml</loc>
   <lastmod>2020-07-01T22:04:00Z</lastmod>
  </sitemap>
@@ -38,6 +42,10 @@
   <lastmod>2020-07-01T21:42:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://dalanicolai.github.io/nl/categories/demo.xml</loc>
+  <lastmod>2020-09-02T11:18:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/optics.xml</loc>
   <lastmod>2020-07-01T22:04:00Z</lastmod>
  </sitemap>
@@ -55,14 +63,14 @@
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/nl/rss.xml</loc>
-  <lastmod>2020-09-01T15:16:00Z</lastmod>
+  <lastmod>2020-09-02T11:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/rss.xml</loc>
-  <lastmod>2020-09-01T15:16:00Z</lastmod>
+  <lastmod>2020-09-02T11:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/sitemap.xml</loc>
-  <lastmod>2020-09-02T09:52:00Z</lastmod>
+  <lastmod>2020-09-02T11:18:00Z</lastmod>
  </sitemap>
 </sitemapindex>
