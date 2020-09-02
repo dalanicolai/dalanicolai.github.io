@@ -141,7 +141,7 @@ NAVIGATION_LINKS = {
         ("/blog/", "Blog"),
         ("/spacemacs-tips/", "Spacemacs"),
         ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
+        ("/tags.html/", "Tags"),
         ("/rss.xml", "RSS feed"),
     ),
 
@@ -149,7 +149,7 @@ NAVIGATION_LINKS = {
         ("/blog/", "Blog"),
         ("/spacemacs-tips/", "Spacemacs"),
         ("/nl/archive.html", "Archief"),
-        ("/nl/categories/", "Tags"),
+        ("/nl/tags.html", "Tags"),
         ("/nl/rss.xml", "RSS-feed"),
     ),
 }
