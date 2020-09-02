@@ -19,8 +19,8 @@ communicate with Intel hardware.”
 [[https://www.slant.co/topics/12/~best-programming-text-editors][Dont forget to improve other people's lifes by upvoting]]
 
 * Introduction and motivation
-  As I prefer to work on other things than studying documentation for how to use
-  certain tools, I will keep this introduction very short.
+  As I myself prefer to work on other things than reading documentation about
+  how to use certain tools, I will keep this introduction very short.
 
 In short Emacs is a universal text editing environment that is implemented as
 and powered by a virtual lisp-machine. Spacemacs is a community based set of
