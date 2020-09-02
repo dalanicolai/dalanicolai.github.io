@@ -1,5 +1,5 @@
 #+BEGIN_COMMENT
-.. title: Welcome to my website!
+.. title: Welcome to this website!
 .. slug: index
 .. date: 2020-06-30 16:14:50 UTC+02:00
 .. tags: 
@@ -10,10 +10,10 @@
 
 #+END_COMMENT
 
+This website is a work in progress. Until now you can only find some tips on
+using Spacemacs [[section:spacemacs-tips/][here]] . And a few blog posts [[section:blog/][here]].
 
 On this page I am planning to create my website. For now I just configured a
-setup a nice workflow to create this website using the awesome [[https://orgmode.org/][org-mode]] with
-[[https://www.spacemacs.org/][Spacemacs]] combined with the [[https://getnikola.com/][Nikola static-page generator]] with its [[https://plugins.getnikola.com/v8/orgmode/][org-mode
-plugin]]. Currently this website uses the [[https://getnikola.com/creating-a-theme.html][lanyon theme]].
-
-At the moment, I am only working on my [[section:blog/][blog]].
+setup. The setup enables a nice workflow for creating this website using the
+awesome [[https://orgmode.org/][org-mode]] from [[https://www.spacemacs.org/][Spacemacs]] combined with the [[https://getnikola.com/][Nikola static-page generator]]
+with its [[https://plugins.getnikola.com/v8/orgmode/][org-mode plugin]]. Currently this website uses the [[https://getnikola.com/creating-a-theme.html][lanyon theme]].

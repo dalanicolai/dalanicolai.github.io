@@ -14,10 +14,6 @@
   <lastmod>2020-07-01T21:42:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://dalanicolai.github.io/categories/demo.xml</loc>
-  <lastmod>2020-09-02T11:18:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://dalanicolai.github.io/categories/optics.xml</loc>
   <lastmod>2020-07-01T22:04:00Z</lastmod>
  </sitemap>
@@ -40,10 +36,6 @@
  <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/cat_spacemacs.xml</loc>
   <lastmod>2020-07-01T21:42:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://dalanicolai.github.io/nl/categories/demo.xml</loc>
-  <lastmod>2020-09-02T11:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/nl/categories/optics.xml</loc>
@@ -71,6 +63,6 @@
  </sitemap>
  <sitemap>
   <loc>https://dalanicolai.github.io/sitemap.xml</loc>
-  <lastmod>2020-09-02T11:28:00Z</lastmod>
+  <lastmod>2020-09-02T11:41:00Z</lastmod>
  </sitemap>
 </sitemapindex>
