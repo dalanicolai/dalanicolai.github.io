@@ -19,8 +19,8 @@ communicate with Intel hardware.”
 [[https://www.slant.co/topics/12/~best-programming-text-editors][Dont forget to improve other people's lifes by upvoting]]
 
 * Introduction and motivation
-  As I myself prefer to work on other things than reading documentation about
-  how to use certain tools, I will keep this introduction very short.
+As I myself prefer to work on other things than reading documentation about how
+to use certain tools, I will keep this introduction very short.
 
 In short Emacs is a universal text editing environment that is implemented as
 and powered by a virtual lisp-machine. Spacemacs is a community based set of
@@ -115,22 +115,19 @@ This is the most important table. You should note remember and remember to use
 all options. Therefore *study this list carefully*.
 
 *IMPORTANT COMMENTS:* 
-- In info mode most of the evil-bindings are not well
-implemented. Therefore it might be handy to read the Emacs documentation about
-how to navigate the info manuals.
+- In info mode most of the evil-bindings are not well implemented.
+Therefore it might be handy to read the Emacs documentation about how to
+  navigate the info manuals.
 
-- The describe function is extremely handy. You should study all describe
-  options, (especially: bindings, function, key, mode, variable).
-Although the describe function and variable functionalities might get useful
-only when writing or studying lisp, the other options are really handy for quick
-help lookups.
+- The describe function is extremely handy.
+You should study all describe options, (especially: bindings, function, key,
+  mode, variable). Although the describe function and variable functionalities
+  might get useful only when writing or studying lisp, the other options are
+  really handy for quickhelp lookups.
 
-- With the /binding/ option you can quickly lookup key-bindings by fuzzy search on
-  function name (e.g. 'upcase', 'comment', 'jump', 'delete').
-- With the /key/ option you can quickly find the function name bound to a
-  key-sequence by searching on key sequence (e.g. =SPC l=, or =g g=).
-- With the /mode/ option you can quickly get information about the current major
-  mode (e.g. special functions and bindings for the python mode)
+- With the /binding/ option you can quickly lookup key-bindings by fuzzy search on function name (e.g. 'upcase', 'comment', 'jump', 'delete').
+- With the /key/ option you can quickly find the function name bound to a   key-sequence by searching on key sequence (e.g. =SPC l=, or =g g=).
+- With the /mode/ option you can quickly get information about the current major mode (e.g. special functions and bindings for the python mode).
 
 ** help/introspection
 | Go to info                             | C-h i   |
