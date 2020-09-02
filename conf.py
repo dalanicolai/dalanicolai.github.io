@@ -141,7 +141,7 @@ NAVIGATION_LINKS = {
         ("/blog/", "Blog"),
         ("/spacemacs-tips/", "Spacemacs"),
         ("/archive.html", "Archive"),
-        ("/tags.html/", "Tags"),
+        ("/tags.html", "Tags"),
         ("/rss.xml", "RSS feed"),
     ),
 
