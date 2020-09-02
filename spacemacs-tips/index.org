@@ -15,6 +15,9 @@
 communicate with Intel hardware.”
 – Erwin, /#emacs/, Freenode.
 #+END_QUOTE
+
+[[https://www.slant.co/topics/12/~best-programming-text-editors][Dont forget to improve other people's lifes by upvoting]]
+
 * Introduction and motivation
   As I prefer to work on other things than studying documentation for how to use
   certain tools, I will keep this introduction very short.
@@ -134,7 +137,7 @@ help lookups.
 | Describe ANYTHING                      | SPC h d |
 | Execute (or choose action on) function | SPC SPC |
 
-=SPC SPC= opens /HELM M-x/, you can type a name of any function and either execute
+=SPC SPC= opens =HELM M-x= you can type a name of any function and either execute
 it or type =C-z= to choose from a list of alternative actions (e.g. describe, go
 to definition)
 
