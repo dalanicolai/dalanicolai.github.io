@@ -56,6 +56,41 @@ quotes) to quickly find keybindings to the yank function.
 As shown in the link above, there are many more =describe= functions (see =SPC h
 d=). Note them well, *THEY ARE PROBABLY THE MOST IMPORTANT FUNCTIONS ONE SHOULD*
 *KNOW FOR MASTERING (SPAC)EMACS*
+** Some personal (nice) remapping
+Paste the code from this section in the =user-config= section of your dotfile to
+get the described remappings
+[[https://pwmt.org/projects/zathura/][Zathura]]-style keymapping of using =J/K= for scrolling to the next/previous page
+(the default =J/K= bindings are exchanged with the default bindings for jump to next/previous page)
+#+BEGIN_SRC 
+  (define-key evil-normal-state-map "J" nil)
+  (define-key evil-normal-state-map "K" nil)
+  (evil-global-set-key 'motion "J" 'evil-scroll-page-down)
+  (evil-global-set-key 'motion "\C-f" 'evil-join)
+  (evil-global-set-key 'motion "K" 'evil-scroll-page-up)
+  (evil-global-set-key 'motion "\C-b" 'spacemacs/evil-smart-doc-lookup)
+#+END_SRC
+When you really get used to vim style navigation you might also prefer =C-l/C-h= over the arrow keys to scroll for scrolling forward/backward:
+#+BEGIN_SRC 
+  (evil-global-set-key 'insert (kbd "C-l") 'right-char)
+  (evil-global-set-key 'insert (kbd "C-h") 'left-char)
+#+END_SRC
+It might be handy to have a shortcut to your default notes file:
+#+BEGIN_SRC 
+  (defun notes ()
+    (interactive)
+    (find-file "~/Sync/org/notes.org"))
+  (spacemacs/set-leader-keys "aon" 'notes)
+  (spacemacs/set-leader-keys "aos"
+    (lambda () (interactive) (spacemacs/counsel-search '("rg") nil "~/Sync/org/")))
+#+END_SRC
+And a default shortcut to grep (deep file search) in your default notes folder
+(although you might prefer to use one note file only):
+#+BEGIN_SRC 
+  (spacemacs/set-leader-keys "aos"
+    (lambda () (interactive) (spacemacs/counsel-search '("rg") nil "~/Sync/org/")))
+#+END_SRC
+** Checkout and use available yasnippets in every mode 
+   [[https://develop.spacemacs.org/layers/+completion/auto-completion/README.html#yasnippet][Yasnippets]] are available [[https://develop.spacemacs.org/layers/+completion/auto-completion/README.html#yasnippet][under the shortcut =SPC i s=]].
 ** Private packages/layers
 Instead of creating private layers directly in your =.emacs.d/private/=
 directory, consider to place them in a dedicated syncing directory (e.g. a
