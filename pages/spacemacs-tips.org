@@ -56,7 +56,7 @@ quotes) to quickly find keybindings to the yank function.
 As shown in the link above, there are many more =describe= functions (see =SPC h
 d=). Note them well, *THEY ARE PROBABLY THE MOST IMPORTANT FUNCTIONS ONE SHOULD*
 *KNOW FOR MASTERING (SPAC)EMACS*
-** Some personal (nice) remapping
+** Some personal (nice) remappings
 Paste the code from this section in the =user-config= section of your dotfile to
 get the described remappings
 [[https://pwmt.org/projects/zathura/][Zathura]]-style keymapping of using =J/K= for scrolling to the next/previous page
