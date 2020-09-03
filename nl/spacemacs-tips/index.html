@@ -72,9 +72,9 @@ communicate with Intel hardware.”
 <a href="https://www.slant.co/topics/12/~best-programming-text-editors">Dont forget to improve other people's lifes by upvoting</a>
 </p>
 
-<div id="outline-container-org6c178d2" class="outline-2">
-<h2 id="org6c178d2">Introduction and motivation</h2>
-<div class="outline-text-2" id="text-org6c178d2">
+<div id="outline-container-org5f8b599" class="outline-2">
+<h2 id="org5f8b599">Introduction and motivation</h2>
+<div class="outline-text-2" id="text-org5f8b599">
 <p>
 As I myself prefer to work on other things than reading documentation about how
 to use certain tools, I will keep this introduction very short.
@@ -91,30 +91,30 @@ which makes it the ultimate editor for hackers and community driven development.
 </p>
 </div>
 </div>
-<div id="outline-container-orge5e13de" class="outline-2">
-<h2 id="orge5e13de">Spacemacs tips</h2>
-<div class="outline-text-2" id="text-orge5e13de">
+<div id="outline-container-orgd5eac33" class="outline-2">
+<h2 id="orgd5eac33">Spacemacs tips</h2>
+<div class="outline-text-2" id="text-orgd5eac33">
 </div>
-<div id="outline-container-orgd6ca76b" class="outline-3">
-<h3 id="orgd6ca76b">Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)</h3>
-<div class="outline-text-3" id="text-orgd6ca76b">
+<div id="outline-container-org9f3efd0" class="outline-3">
+<h3 id="org9f3efd0">Use the Spacemacs develop branch, it is really recommended by most developers (e.g. on Spacemacs gitter)</h3>
+<div class="outline-text-3" id="text-org9f3efd0">
 <p>
 Follow (ALL) the steps at <a href="https://practicalli.github.io/spacemacs/install-spacemacs/switch-to-develop.html">the great practicalli website</a> to switch to develop branch.
 </p>
 </div>
 </div>
-<div id="outline-container-org9155eaa" class="outline-3">
-<h3 id="org9155eaa">Use <b>o</b> instead of <b>w</b> for editing of symbol(-name)</h3>
-<div class="outline-text-3" id="text-org9155eaa">
+<div id="outline-container-org69d14e2" class="outline-3">
+<h3 id="org69d14e2">Use <b>o</b> instead of <b>w</b> for editing of symbol(-name)</h3>
+<div class="outline-text-3" id="text-org69d14e2">
 <p>
 In spacemacs a word(-object) is defined differently than in vim. To quickly edit
 full symbol name use <code>o</code> instead of <code>w</code> (e.g. for selecting a symbol use <code>v i o</code>).
 </p>
 </div>
 </div>
-<div id="outline-container-org380bd06" class="outline-3">
-<h3 id="org380bd06">Quick navigation within files</h3>
-<div class="outline-text-3" id="text-org380bd06">
+<div id="outline-container-org2068840" class="outline-3">
+<h3 id="org2068840">Quick navigation within files</h3>
+<div class="outline-text-3" id="text-org2068840">
 <p>
  To quickly navigate inside a file use <code>SPC j i</code>. Additionally one could choose to
 <a href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Specifying-File-Variables">set a local variable</a> to start with the code folded using <code>HideShow</code>. E.g. replace
@@ -124,18 +124,18 @@ the first line of your <code>.spacemacs</code> file by the following:
 </pre></div>
 </div>
 </div>
-<div id="outline-container-orgf8c8059" class="outline-3">
-<h3 id="orgf8c8059">Comments</h3>
-<div class="outline-text-3" id="text-orgf8c8059">
+<div id="outline-container-orge37f0a4" class="outline-3">
+<h3 id="orge37f0a4">Comments</h3>
+<div class="outline-text-3" id="text-orge37f0a4">
 <p>
 Lines can be (un)commented by selecting line with evil visual line <code>SPC V</code>
 followed by <code>SPC ;</code>. Use <code>SPC ; ;</code> to directly toggle single line comments.
 </p>
 </div>
 </div>
-<div id="outline-container-orgbd456e8" class="outline-3">
-<h3 id="orgbd456e8">Finding/discovering functionality</h3>
-<div class="outline-text-3" id="text-orgbd456e8">
+<div id="outline-container-org03aa65e" class="outline-3">
+<h3 id="org03aa65e">Finding/discovering functionality</h3>
+<div class="outline-text-3" id="text-org03aa65e">
 <p>
 When looking for some kind of functionality or it's keybinding, it is often
 handy to use <a href="https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#discovering">the self-documenting features</a> of Spacemacs.
@@ -154,9 +154,58 @@ d</code>). Note them well, <b>THEY ARE PROBABLY THE MOST IMPORTANT FUNCTIONS ONE
 </p>
 </div>
 </div>
-<div id="outline-container-orga5e0f57" class="outline-3">
-<h3 id="orga5e0f57">Private packages/layers</h3>
-<div class="outline-text-3" id="text-orga5e0f57">
+<div id="outline-container-org2daa88c" class="outline-3">
+<h3 id="org2daa88c">Some personal (nice) remapping</h3>
+<div class="outline-text-3" id="text-org2daa88c">
+<p>
+Paste the code from this section in the <code>user-config</code> section of your dotfile to
+get the described remappings
+<a href="https://pwmt.org/projects/zathura/">Zathura</a>-style keymapping of using <code>J/K</code> for scrolling to the next/previous page
+(the default <code>J/K</code> bindings are exchanged with the default bindings for jump to next/previous page)
+</p>
+<div class="highlight"><pre><span></span>(define-key evil-normal-state-map "J" nil)
+(define-key evil-normal-state-map "K" nil)
+(evil-global-set-key 'motion "J" 'evil-scroll-page-down)
+(evil-global-set-key 'motion "\C-f" 'evil-join)
+(evil-global-set-key 'motion "K" 'evil-scroll-page-up)
+(evil-global-set-key 'motion "\C-b" 'spacemacs/evil-smart-doc-lookup)
+</pre></div>
+<p>
+When you really get used to vim style navigation you might also prefer <code>C-l/C-h</code> over the arrow keys to scroll for scrolling forward/backward:
+</p>
+<div class="highlight"><pre><span></span>(evil-global-set-key 'insert (kbd "C-l") 'right-char)
+(evil-global-set-key 'insert (kbd "C-h") 'left-char)
+</pre></div>
+<p>
+It might be handy to have a shortcut to your default notes file:
+</p>
+<div class="highlight"><pre><span></span>(defun notes ()
+  (interactive)
+  (find-file "~/Sync/org/notes.org"))
+(spacemacs/set-leader-keys "aon" 'notes)
+(spacemacs/set-leader-keys "aos"
+  (lambda () (interactive) (spacemacs/counsel-search '("rg") nil "~/Sync/org/")))
+</pre></div>
+<p>
+And a default shortcut to grep (deep file search) in your default notes folder
+(although you might prefer to use one note file only):
+</p>
+<div class="highlight"><pre><span></span>(spacemacs/set-leader-keys "aos"
+  (lambda () (interactive) (spacemacs/counsel-search '("rg") nil "~/Sync/org/")))
+</pre></div>
+</div>
+</div>
+<div id="outline-container-orgfd63ea7" class="outline-3">
+<h3 id="orgfd63ea7">Checkout and use available yasnippets in every mode</h3>
+<div class="outline-text-3" id="text-orgfd63ea7">
+<p>
+<a href="https://develop.spacemacs.org/layers/+completion/auto-completion/README.html#yasnippet">Yasnippets</a> are available <a href="https://develop.spacemacs.org/layers/+completion/auto-completion/README.html#yasnippet">under the shortcut <code>SPC i s</code></a>.
+</p>
+</div>
+</div>
+<div id="outline-container-orgee74643" class="outline-3">
+<h3 id="orgee74643">Private packages/layers</h3>
+<div class="outline-text-3" id="text-orgee74643">
 <p>
 Instead of creating private layers directly in your <code>.emacs.d/private/</code>
 directory, consider to place them in a dedicated syncing directory (e.g. a
@@ -165,9 +214,9 @@ your .emacs.d/private/ directory. Even better create a github repository per lay
 </p>
 </div>
 </div>
-<div id="outline-container-orgd2b2458" class="outline-3">
-<h3 id="orgd2b2458">Org notes</h3>
-<div class="outline-text-3" id="text-orgd2b2458">
+<div id="outline-container-org9d306c1" class="outline-3">
+<h3 id="org9d306c1">Org notes</h3>
+<div class="outline-text-3" id="text-org9d306c1">
 <p>
 Create an org folder in some syncing directory (e.g. Dropbox or Syncthing).
 Subsequently in that org folder create a .projectile file. Now you can use all
@@ -176,9 +225,9 @@ search withing all your notes files.
 </p>
 </div>
 </div>
-<div id="outline-container-org75766c7" class="outline-3">
-<h3 id="org75766c7">Deep-search</h3>
-<div class="outline-text-3" id="text-org75766c7">
+<div id="outline-container-orga875f16" class="outline-3">
+<h3 id="orga875f16">Deep-search</h3>
+<div class="outline-text-3" id="text-orga875f16">
 <p>
 Remember that ripgrep, ag etc. ignore files in .gitignore. Therefore you can not
 simply use them to search e.g. inside of elpa packages in your .emacs.d
@@ -186,36 +235,36 @@ directory. Instead either use <code>SPC s f</code> or use grep <code>SPC s g</co
 </p>
 </div>
 </div>
-<div id="outline-container-org0bc0cb6" class="outline-3">
-<h3 id="org0bc0cb6">Customizations</h3>
-<div class="outline-text-3" id="text-org0bc0cb6">
+<div id="outline-container-orgd825361" class="outline-3">
+<h3 id="orgd825361">Customizations</h3>
+<div class="outline-text-3" id="text-orgd825361">
 <ul class="org-ul">
 <li>set <code>dotspacemacs-distinguish-gui-tab</code> to <code>t</code> in your .spacemacs file so you can
 jump forward with <code>C-i</code> after jumping backward with <code>C-o</code>.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orga64523c" class="outline-3">
-<h3 id="orga64523c">Place <b>(transient-bind-q-to-quit)</b> at the end of user-config</h3>
-<div class="outline-text-3" id="text-orga64523c">
+<div id="outline-container-org6f1d531" class="outline-3">
+<h3 id="org6f1d531">Place <b>(transient-bind-q-to-quit)</b> at the end of user-config</h3>
+<div class="outline-text-3" id="text-org6f1d531">
 <p>
 I think this should be the default configuration in Spacemacs, because it is
 more vim-ish (you can find a discussion <a href="https://github.com/syl20bnr/spacemacs/issues/6992#issuecomment-684439951">here</a>).
 </p>
 </div>
 </div>
-<div id="outline-container-orgc342cef" class="outline-3">
-<h3 id="orgc342cef">Annotate PDF's</h3>
-<div class="outline-text-3" id="text-orgc342cef">
+<div id="outline-container-org570b7c9" class="outline-3">
+<h3 id="org570b7c9">Annotate PDF's</h3>
+<div class="outline-text-3" id="text-org570b7c9">
 <p>
 To make annotating pdf's more comfortable, set <code>pdf-annot-activate-annotation</code> to
 <code>t</code> and add <code>text-mode</code> to <code>evil-insert-state-modes</code>
 </p>
 </div>
 </div>
-<div id="outline-container-org3beeb28" class="outline-3">
-<h3 id="org3beeb28">Customize buffer newline</h3>
-<div class="outline-text-3" id="text-org3beeb28">
+<div id="outline-container-org81fb824" class="outline-3">
+<h3 id="org81fb824">Customize buffer newline</h3>
+<div class="outline-text-3" id="text-org81fb824">
 <p>
 In customize buffer, for capture template, to create a newline (instead of \n
 charachter in config file), use C-j or C-o <a href="https://lists.gnu.org/archive/html/emacs-orgmode/2010-11/msg01006.html">reference link</a>
@@ -223,24 +272,24 @@ charachter in config file), use C-j or C-o <a href="https://lists.gnu.org/archiv
 </div>
 </div>
 
-<div id="outline-container-org4947547" class="outline-3">
-<h3 id="org4947547">Spell check language</h3>
-<div class="outline-text-3" id="text-org4947547">
+<div id="outline-container-org7c83720" class="outline-3">
+<h3 id="org7c83720">Spell check language</h3>
+<div class="outline-text-3" id="text-org7c83720">
 <p>
 To get Dutch spell check install Dutch aspell dictionary and restart emacs (or maybe <code>SPC f e R</code> will work too)
 </p>
 </div>
 </div>
-<div id="outline-container-org7c9615d" class="outline-3">
-<h3 id="org7c9615d">
+<div id="outline-container-org258245f" class="outline-3">
+<h3 id="org258245f">
 <span class="todo TODO">TODO</span> Install single packages via <code>additional packages</code>
 </h3>
 </div>
 </div>
 
-<div id="outline-container-org034ceee" class="outline-2">
-<h2 id="org034ceee">Table of handy key-sequences</h2>
-<div class="outline-text-2" id="text-org034ceee">
+<div id="outline-container-org99339fe" class="outline-2">
+<h2 id="org99339fe">Table of handy key-sequences</h2>
+<div class="outline-text-2" id="text-org99339fe">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup>
 <col class="org-left">
@@ -278,9 +327,9 @@ To get Dutch spell check install Dutch aspell dictionary and restart emacs (or m
 </tbody>
 </table>
 </div>
-<div id="outline-container-orgcb9f87c" class="outline-3">
-<h3 id="orgcb9f87c">windows</h3>
-<div class="outline-text-3" id="text-orgcb9f87c">
+<div id="outline-container-org9b37464" class="outline-3">
+<h3 id="org9b37464">windows</h3>
+<div class="outline-text-3" id="text-org9b37464">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup>
 <col class="org-left">
@@ -300,9 +349,9 @@ To get Dutch spell check install Dutch aspell dictionary and restart emacs (or m
 </table>
 </div>
 </div>
-<div id="outline-container-org0c23b3f" class="outline-3">
-<h3 id="org0c23b3f">commenting</h3>
-<div class="outline-text-3" id="text-org0c23b3f">
+<div id="outline-container-org0bc4c1b" class="outline-3">
+<h3 id="org0bc4c1b">commenting</h3>
+<div class="outline-text-3" id="text-org0bc4c1b">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup>
 <col class="org-left">
@@ -324,13 +373,13 @@ To get Dutch spell check install Dutch aspell dictionary and restart emacs (or m
 </div>
 </div>
 
-<div id="outline-container-org10f957e" class="outline-2">
-<h2 id="org10f957e">Org-mode</h2>
-<div class="outline-text-2" id="text-org10f957e">
+<div id="outline-container-orgcb02fa0" class="outline-2">
+<h2 id="orgcb02fa0">Org-mode</h2>
+<div class="outline-text-2" id="text-orgcb02fa0">
 </div>
-<div id="outline-container-org469e6d5" class="outline-3">
-<h3 id="org469e6d5">Notifications</h3>
-<div class="outline-text-3" id="text-org469e6d5">
+<div id="outline-container-org29317df" class="outline-3">
+<h3 id="org29317df">Notifications</h3>
+<div class="outline-text-3" id="text-org29317df">
 <p>
 To get notifications from your org-mode items, e.g. tasks or agenda, use the
 notifications library by adding <code>(require 'notifications)</code> to the
@@ -340,9 +389,9 @@ notifications library by adding <code>(require 'notifications)</code> to the
 </div>
 </div>
 
-<div id="outline-container-org5359364" class="outline-2">
-<h2 id="org5359364">help/introspection</h2>
-<div class="outline-text-2" id="text-org5359364">
+<div id="outline-container-org6038081" class="outline-2">
+<h2 id="org6038081">help/introspection</h2>
+<div class="outline-text-2" id="text-org6038081">
 <p>
 This is the most important table. You should note remember and remember to use
 all options. Therefore <b>study this list carefully</b>.
@@ -376,9 +425,9 @@ You should study all describe options, (especially: bindings, function, key,
 </ul>
 </div>
 
-<div id="outline-container-orge97448f" class="outline-3">
-<h3 id="orge97448f">help/introspection</h3>
-<div class="outline-text-3" id="text-orge97448f">
+<div id="outline-container-org0716a70" class="outline-3">
+<h3 id="org0716a70">help/introspection</h3>
+<div class="outline-text-3" id="text-org0716a70">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup>
 <col class="org-left">
