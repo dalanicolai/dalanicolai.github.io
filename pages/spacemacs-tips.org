@@ -15,7 +15,7 @@
 communicate with Intel hardware.”
 – Erwin, /#emacs/, Freenode.
 #+END_QUOTE
-[[https://www.masteringemacs.org/][Thanks Mickey Petersen]]
+[[https://www.masteringemacs.org/][Thanks for quote Mickey Petersen]]
 
 [[https://www.slant.co/topics/12/~best-programming-text-editors][Dont forget to improve other people's lifes by upvoting]]
 
