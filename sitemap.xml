@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/archive.html</loc>
-  <lastmod>2020-09-02T11:28:00Z</lastmod>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/blog/</loc>
@@ -34,8 +34,20 @@
   <lastmod>2020-03-30T13:53:00Z</lastmod>
  </url>
  <url>
+  <loc>https://dalanicolai.github.io/categories/latex/</loc>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://dalanicolai.github.io/categories/optics/</loc>
   <lastmod>2020-06-29T15:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://dalanicolai.github.io/categories/pdf/</loc>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://dalanicolai.github.io/categories/productivity/</loc>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/categories/robot-framework/</loc>
@@ -63,7 +75,7 @@
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/archive.html</loc>
-  <lastmod>2020-09-02T11:28:00Z</lastmod>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/blog/</loc>
@@ -82,8 +94,20 @@
   <lastmod>2020-03-30T13:53:00Z</lastmod>
  </url>
  <url>
+  <loc>https://dalanicolai.github.io/nl/categories/latex/</loc>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://dalanicolai.github.io/nl/categories/optics/</loc>
   <lastmod>2020-06-29T15:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://dalanicolai.github.io/nl/categories/pdf/</loc>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://dalanicolai.github.io/nl/categories/productivity/</loc>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/categories/robot-framework/</loc>
@@ -113,12 +137,17 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://dalanicolai.github.io/posts/spacemacs-robot-framework-layer/" />
  </url>
  <url>
+  <loc>https://dalanicolai.github.io/nl/posts/the-best-pdf-editor/</loc>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://dalanicolai.github.io/posts/the-best-pdf-editor/" />
+ </url>
+ <url>
   <loc>https://dalanicolai.github.io/nl/spacemacs-tips/</loc>
   <lastmod>2020-09-01T07:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/tags.html</loc>
-  <lastmod>2020-09-02T11:28:00Z</lastmod>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/nl/welcome/</loc>
@@ -137,12 +166,16 @@
   <lastmod>2020-06-20T10:57:00Z</lastmod>
  </url>
  <url>
+  <loc>https://dalanicolai.github.io/posts/the-best-pdf-editor/</loc>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://dalanicolai.github.io/spacemacs-tips/</loc>
   <lastmod>2020-09-01T07:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/tags.html</loc>
-  <lastmod>2020-09-02T11:28:00Z</lastmod>
+  <lastmod>2020-09-05T12:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://dalanicolai.github.io/welcome/</loc>
