@@ -1,1 +1,7 @@
-((org-mode . ((org-export-with-toc . nil))))
+((org-mode . ((org-export-with-toc . nil)
+	      (after-save-hook lambda ()
+			       (when (string= (file-name-extension buffer-file-name) "org")
+				 (let  ((outfile (concat "../"
+							 (file-name-base buffer-file-name)
+							 ".md")))
+				   (org-export-to-file 'jekyll outfile)))))))
