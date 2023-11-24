@@ -13,25 +13,22 @@ tags:
 
 ## Introduction
 
-As modern coders, and especially as Emacs users, we are very much
-spoiled by our editors. Features that are much appreciated by coders
-are auto-completion (as provided by packages like [company](http://company-mode.github.io/), [corfu](https://github.com/minad/corfu)
-etc.), signature-hints (provided by `eldoc`) and code checking (provided
-by `Flymake`). Features like these are called (here) 'Coding Assistance
-(features)'.
+Org mode, with its [org-babel](https://orgmode.org/worg/org-contrib/babel/intro.html) package, provides a great literate
+programming environment and forms a great alternative to jupyter
+notebooks. However, one thing that is currently missing when doing
+literate programming in org-mode is proper coding assistance.
 
-Coding assistance features need to be somewhat aware of the meaning of
-your code. When coding dynamic languages, coding assistance
-information can be provided by the REPL/interpreter, provided that you
-made the REPL aware of your code (i.e. evaluated it inside the REPL).
+In this article I describe how to solve various coding assistance
+issues when using org-mode for literate programming.
 
-For both static and dynamic languages information can be provided by
-'static analyzers' like [linters](https://en.wikipedia.org/wiki/Lint_(software)) and [formatters](https://github.com/rishirdua/awesome-code-formatters#python). Such analyzers do not
-require code to be evaluated in some REPL first.
 
-In this article, coding assistance using information from the REPL is
-called dynamic coding assistance, while assistance using static
-analyzers is called static coding assistance.
+### Usage
+
+This article is meant to be read interactively from inside Emacs. So
+it is recommended to download the article from [here](https://raw.githubusercontent.com/dalanicolai/notes/main/pages/notes/fixing-org-mode-coding-assistance.org) and open it in
+Emacs. Of course the article can be read in a browser also, but
+interactive examples will not work and internal links will not be
+displayed.
 
 
 ### Overview
@@ -43,11 +40,11 @@ implemented, maybe in a slightly modified form, on lower versions of
 Emacs and org-mode (they should work at least from Emacs version 27
 with org-mode version 9).
 
-The dynamic coding assistance will only work for interpreted
-languages, and examples for emacs-lisp and python are provided.
+Dynamic coding assistance only works (or exists) for interpreted
+languages. Examples for emacs-lisp and python are provided.
 
-The static coding assistance within org-mode, works for any language
-that provides some static coding analysis package that accepts buffer
+Static coding assistance within org-mode works for any language that
+provides some static coding analysis package that accepts buffer
 contents instead of files, like [jedi](https://jedi.readthedocs.io/en/latest/).
 
 Finally, the static coding assistance in special editing buffers works
@@ -55,25 +52,78 @@ for any language that comes with a static code analysis package (which
 nowadays more or less means, any language with [LSP](https://microsoft.github.io/language-server-protocol/) support).
 
 
-### Usage
-
-This article is meant to be read interactively from inside Emacs. So
-it is recommended to download the article from [here](https://github.com/dalanicolai/notes/blob/main/pages/notes/fixing-org-mode-coding-assistance.org) and open it in
-Emacs. Of course the article can be read in a browser also, but
-interactive examples will not work and internal links will not be
-displayed.
-
-
 ### Acknowledgement
 
-The required investigations for writing this article have been made
-possible by [MLP](https://www.mlprograms.com/), an innovative AI company, that has hired me to
+Some of the required investigations for writing this article have been
+made possible by [MLP](https://www.mlprograms.com/), an innovative AI company, that has hired me to
 investigate and solve some of these issues. It has been great fun
-working for MLP, and I am very thankful to MLP for providing me this
+working for MLP, and I am very thankful to MLP for providing me the
 great opportunity.
 
 
-## Fixing dynamic coding assistance for emacs-lisp
+## Coding assistance (in this article)
+
+As coders we are spoiled by our editors. Generally, editors provide a
+lot of assistance like auto-indentation, auto-completion, signature
+hints, jump to definition, code checkers, refactoring features
+etc. Although these are all well known features, I could not find a
+single all-encompassing term for this body of features. In this
+article I refer to the collection of such basic features as coding
+assistance, and usage of the term should not be confused with its
+common usage for refering to more advanced [coding assistance tools](https://www.codium.ai/blog/10-best-ai-coding-assistant-tools-in-2023/)
+like [copilot](https://github.com/features/copilot), [tabnine](https://www.tabnine.com/) etc.
+
+
+### Dynamic and static coding assistance
+
+Most of the coding tools consist of a front end and a back end. For
+Emacs, auto-completion front ends are provided by [company](http://company-mode.github.io/), [corfu](https://github.com/minad/corfu),
+[auto-complete](https://github.com/auto-complete/auto-complete) etc, the signature hints front end is provided by `eldoc`,
+jump to definition by `xref`, code checking by `Flymake`&#x2026; etc. These
+front ends are provided information via back ends. A full collection
+of front ends is also provided by lsp clients (Eglot and LSP mode),
+see [LSP](#lsp) below.
+
+
+#### Dynamic coding assistance
+
+For dynamic languages (languages with a REPL), the back end can be the
+REPL. This article refers to coding assistance using such backends as
+*dynamic coding assistance*. To provide coding assistance information,
+the REPL needs to be aware of your code and you must evaluate your
+code in the REPL (e.g. via 'send to REPL/shell' functions) before
+coding assistance works. Generally such coding assistance does not
+require the installation of extra packages (besides the package that
+provides the REPL for your language).
+
+
+#### Static coding assistance
+
+For both static and dynamic programming languages, coding assistance
+information can also be provided by 'external packages' like static
+analyzers, linters, formatters etc. This article refers to such coding
+assistance as *static coding assistance*.
+
+
+#### LSP
+
+Alternatively, LSP clients provide the full collection of front
+ends. Emacs 29 ships with the eglot lsp-client which simply reuses the
+exisiting emacs front ends mentioned in the previous paragraph. <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> Another popular, and probably somewhat more
+powerful, LSP client is provided by [LSP mode](https://emacs-lsp.github.io/lsp-mode/). <sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
+
+
+### Partial solutions
+
+Many dynamic coding assistance issues can be solved by using
+[emacs-jupyter](https://github.com/emacs-jupyter/jupyter) if possible (i.e. if a kernel for your language is
+available).
+
+Although I haven't tried it, [LSP mode is trying to implement coding
+assistance support for literate programming in org-mode](https://emacs-lsp.github.io/lsp-mode/manual-language-docs/lsp-org/).
+
+
+## PART 1: Fixing dynamic coding assistance for emacs-lisp
 
 This section describes how to fix dynamic coding assistance for
 emacs-lisp. Subsequent sections describe how to fix dynamic and static
@@ -200,7 +250,7 @@ Voila! This has also fixed eldoc functionality within `emacs-lisp`
 source blocks.
 
 
-## Fixing python dynamic coding assistance
+## PART 2: Fixing python dynamic coding assistance
 
 The previous section showed how to fix dynamic coding assistance
 within org-mode emacs-lisp source code blocks. The current section
@@ -602,7 +652,7 @@ num2words
 {% endhighlight %}
 
 
-## Coding assistance for Emacs Jupyter
+## PART 3: Coding assistance for Emacs Jupyter
 
 For languages with Jupyter support, the easiest way to work with
 source blocks is by using [emacs-jupyter](https://github.com/emacs-jupyter/jupyter). Its README file explains how
@@ -723,7 +773,7 @@ This function is called by `org-babel-execute-src-block'."
 {% endhighlight %}
 
 
-## Fixing coding assistance in special editing buffers
+## PART 4: Fixing coding assistance in special editing buffers
 
 In the previous articles we have fixed 'in-org' coding
 assistance. However, except for the smallest edits, editing is better
@@ -816,3 +866,12 @@ solution:
                    (:jedi
     		(:environment "~/.virtualenvs/testenv"))))))
     {% endhighlight %}
+
+# Footnotes
+
+<sup><a id="fn.1" href="#fnr.1">1</a></sup> This was mentioned somewhere in the eglot contribution notes, but I
+can not find it anymore
+
+<sup><a id="fn.2" href="#fnr.2">2</a></sup> You can find a
+discussion about some differences at
+<https://github.com/joaotavora/eglot/issues/180>
