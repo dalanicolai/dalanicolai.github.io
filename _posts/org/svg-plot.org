@@ -1,0 +1,112 @@
+#+TITLE: SVG plot development notes
+#+PROPERTY: header-args :results value file
+
+This file presents a very rudimentary design for a svg-plot.el.
+Unfortunately, I have no time to finish this now (probably I will
+continue at some later point), but I guess this could be very useful
+to someone who would like to work it out a little more.
+
+Creating a simple plot package using svg.el, in theory, should be
+quite straightforward. However, SVG defines y-coordinates in a
+downward direction instead of the upward direction customarily used in
+plots. Therefore we have to apply some little coordinate
+transformation tricks to conveniently define our plotting elements.
+
+Furthermore, it is convenient to use a modular design for the plotting
+image. A convenient way to modular build up an svg image is by using
+[[https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g][group elements]].
+#+begin_src emacs-lisp :file graph.svg 
+(defun svg-group (&rest args)
+  (apply #'dom-node
+         'g
+         `(,(svg--arguments nil args))))
+
+(defun svg-plot-line (data &rest color width args)
+  (let (x-data y-data)
+    (dolist (p data)
+      (push (car p) x-data)
+      (push (cdr p) y-data))
+
+    (let* ((x-min (seq-min x-data))
+	   (x-max (seq-max x-data))
+	   (y-min (seq-min y-data))
+	   (y-max (seq-max y-data))
+	   (g (svg-group :stroke (or color "blue")
+			 :stroke-width (or width 2)
+			 :fill "none")))
+      (svg-polyline g (mapcar (lambda (p)
+				(cons (- (car p) x-min)
+				      (- (cdr p) y-min)))
+			      data))
+      g)))
+
+(let* ((w 100)
+       (h 100)
+       (svg (svg-create w h
+			:stroke "black"
+			:transform (format "translate(0,%d) scale(1,-1)" h))))
+  (with-temp-buffer
+    (svg-print (dom-append-child svg (svg-plot-line '((0 . 100) (100 . 200)))))
+    (buffer-string)))
+#+end_src
+
+#+RESULTS:
+[[file:graph.svg]]
+
+#+begin_src emacs-lisp :file graph.svg
+(defun svg-plot-grid (w h dx dy &rest args)
+  (let ((g (apply #'svg-group args))
+	(s 0))
+    (while (<= s w)
+      (svg-line g s 0 s h)
+      (cl-incf s dx))
+    (setq s 0)
+    (while (<= s h)
+      (svg-line g 0 s w s)
+      (cl-incf s dy))
+    g))
+
+(defun svg-plot-ticks (w dx &rest args)
+  (let ((g (apply #'svg-group :transform "scale(1,-1)" args))
+    	(s 0))
+    (while (<= s w)
+      (svg-text g (number-to-string s) :x s :y 20)
+      (cl-incf s dx))
+    g))
+
+(defun svg-plot (data)
+  (let (x-data y-data)
+    (dolist (p data)
+      (push (car p) x-data)
+      (push (cdr p) y-data))
+
+    (let* ((x-min (seq-min x-data))
+	   (x-max (seq-max x-data))
+	   (y-min (seq-min y-data))
+	   (y-max (seq-max y-data))
+	   (w (- x-max x-min))
+	   (h (- y-max y-min))
+	   (pad-x 100)
+	   (pad-y 50)
+	   (x (+ w (* 2 pad-x)))
+	   (y (+ h (* 2 pad-y)))
+	   (svg (svg-create x y
+			    :stroke-color "gray"
+			    :transform (format "translate(0,%d) scale(1,-1)" y)))
+	   (graph (svg-group :transform (format "translate(%d, %d)" pad-x pad-y)))
+	   (grid (svg-plot-grid w h 100 100 :stroke-dasharray "4" )))
+      
+      (svg-rectangle svg 0 0 x y :fill "white")
+      (dom-append-child graph grid)
+      (dom-append-child graph (svg-plot-ticks 400 100))
+      (dom-append-child graph (svg-plot-line data))
+      (dom-append-child svg graph)
+      (with-temp-buffer
+	(svg-print svg)
+	(buffer-string)))))
+
+(svg-plot (mapcar (lambda (x) (cons x (* 100 (sin (/ x 50.0))))) (number-sequence 0 400)))
+#+end_src
+
+#+RESULTS:
+[[file:graph.svg]]
